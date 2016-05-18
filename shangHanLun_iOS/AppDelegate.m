@@ -7,9 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "helpTableViewController.h"
+#import "unitTableViewController.h"
+#import "YaoViewController.h"
+#import "FangViewController.h"
+#import "ViewController.h"
 
-@interface AppDelegate ()
-
+@interface AppDelegate () <UINavigationControllerDelegate>
+{
+    UITabBarController *_tc;
+}
 @end
 
 @implementation AppDelegate
@@ -17,7 +24,77 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    HH2SearchConfig *config = [HH2SearchConfig sharedConfig];
+    DataCache *cache = [DataCache sharedData];
+    
+    ViewController *vc = [[ViewController alloc] initWithStyle:UITableViewStylePlain data:cache.itemData];
+    vc.bookName = @"伤寒论";
+    vc.tabBarItem.title = @"伤寒论条文";
+    UINavigationController *vcNav = [[UINavigationController alloc] initWithRootViewController:vc];
+    vc.tabBarItem.image = [UIImage imageNamed:@"IMG_1370.PNG"];
+    
+    FangViewController *vcFang = [[FangViewController alloc] initWithStyle:UITableViewStylePlain data:cache.fangData];
+    vcFang.bookName = @"伤寒论113方";
+    vcFang.tabBarItem.title = @"方剂表";
+    UINavigationController *vcFangNav = [[UINavigationController alloc] initWithRootViewController:vcFang];
+    vcFang.tabBarItem.image = [UIImage imageNamed:@"IMG_1378.PNG"];
+    
+    unitTableViewController *vcUnit = [[unitTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    //vcUnit.title = @"汉制单位换算";
+    //    vcUnit.bgColor = vc.bgColor;
+    vcUnit.tabBarItem.title = @"汉制单位";
+    UINavigationController *vcUnitNav = [[UINavigationController alloc] initWithRootViewController:vcUnit];
+    vcUnit.tabBarItem.image = [UIImage imageNamed:@"ruler.png"];
+    vcUnit.bgColor = [UIColor colorWithRed:0.8 green:0.8 blue:0 alpha:0.3];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    label.font = [UIFont fontWithName:label.font.fontName size:19.0];
+    label.text = @"汉制单位换算表";
+    label.textColor = [UIColor whiteColor];
+    vcUnit.navigationItem.titleView = label;
+    
+    YaoViewController *vcYao = [[YaoViewController alloc] initWithStyle:UITableViewStylePlain data:cache.yaoData];
+    vcYao.bookName = @"伤寒药物";
+    vcYao.tabBarItem.title = @"伤寒药物";
+    UINavigationController *vcYaoNav = [[UINavigationController alloc] initWithRootViewController:vcYao];
+    vcYao.tabBarItem.image = [UIImage imageNamed:@"IMG_1376.PNG"];
+    
+    helpTableViewController *help = [[helpTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    help.tabBarItem.title = @"设置与帮助";
+    UINavigationController *helpNav = [[UINavigationController alloc] initWithRootViewController:help];
+    help.tabBarItem.image = [UIImage imageNamed:@"IMG_1368.PNG"];
+    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    label2.font = [UIFont fontWithName:label.font.fontName size:19.0];
+    label2.text = @"设置与帮助";
+    label2.textColor = [UIColor whiteColor];
+    help.navigationItem.titleView = label2;
+    
+    _tc = [[UITabBarController alloc] init];
+    _tc.viewControllers = @[vcNav,vcFangNav,vcYaoNav,vcUnitNav,helpNav];
+    
+    [_tc.viewControllers enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        UINavigationController *nav = (UINavigationController *)obj;
+        nav.delegate = self;
+        nav.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+        nav.navigationBar.tintColor = [UIColor whiteColor];
+    }];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = _tc;
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.6 green:0.7 blue:1.0 alpha:1]];
+    //    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:0.7]];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+#pragma mark - UINavigationController 代理
+-(void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+    backItem.title = @"返回";
+    viewController.navigationItem.backBarButtonItem = backItem;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

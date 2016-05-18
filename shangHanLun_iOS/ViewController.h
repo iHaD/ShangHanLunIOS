@@ -1,14 +1,16 @@
 //
 //  ViewController.h
-//  shangHanLun_iOS
+//  shangHanLun
 //
-//  Created by hh on 16/5/4.
-//  Copyright © 2016年 hh. All rights reserved.
+//  Created by hh on 14/10/31.
+//  Copyright (c) 2014年 hh. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "HH2SearchViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : HH2SearchViewController
+
 
 
 @end
