@@ -30,14 +30,6 @@
 - (void)setValue:(id)value forKey:(NSString *)key
 {
     if ([key isEqualToString:@"data"]) {
-//        NSMutableArray *arr = [NSMutableArray new];
-//        
-//        [(NSArray *)value enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop){
-//            DataItem *item = [[DataItem alloc] initWithText:obj];
-//            NSIndexPath *ip = [NSIndexPath indexPathForRow:idx inSection:_section];
-//            [item setValue:ip forKey:@"indexPath"];
-//            [arr addObject:item];
-//        }];
         [super setValue:value forKey:key];
         _dataBac = _data;
         [_data enumerateObjectsUsingBlock:^(DataItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {

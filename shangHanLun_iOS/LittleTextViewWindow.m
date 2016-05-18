@@ -27,53 +27,51 @@
     
     NSString *yao = text;
     AppDelegate *app = APP;
-//    if (app.littleWindowStack.count > 0) {
-//        LittleWindow *lw = app.littleWindowStack.lastObject;
-//        NSString *left = app.yaoAliasDict[lw.searchText]?:lw.searchText;
-//        NSString *right = app.yaoAliasDict[text]?:text;
-//        if ([left isEqualToString:right] && [self isInYaoContext]) {
-//            _onlyShowRelatedFang = YES;
-//        }
-//    }else{
-//        UIViewController *con = [self getCurController];
-//        if ([con isKindOfClass:[YaoViewController class]] && [(YaoViewController *)con isContentShow]) {
-//            _onlyShowRelatedFang = YES;
-//        }
-//    }
-//    [app.littleWindowStack addObject:self];
-//    
-//    NSDictionary *dict = app.yaoAliasDict;
-//    NSString *right = dict[yao] ? : yao;
-//    
-//    NSMutableString *strOut = [NSMutableString new];
-//    [app.curFang enumerateObjectsUsingBlock:^(HH2SectionData *obj, NSUInteger idx, BOOL *stop){
-//        NSMutableString *strIn = [NSMutableString new];
-//        __block int i = 0;
-//        [obj.data enumerateObjectsUsingBlock:^(DataItem *obj2, NSUInteger idx2, BOOL *stop2){
-//            [obj2.yaoList enumerateObjectsUsingBlock:^(NSString *obj3, NSUInteger idx3, BOOL *stop3){
-//                NSString *left = dict[obj3] ? : obj3;
-//                if ([left isEqualToString:right]) {
-//                    i++;
-//                    *stop3 = YES;
+    if (app.littleWindowStack.count > 0) {
+        LittleWindow *lw = app.littleWindowStack.lastObject;
+        if ([DataCache name:lw.searchText isEqualToName:text isFang:NO] && [self isInYaoContext]) {
+            _onlyShowRelatedFang = YES;
+        }
+    }else{
+        UIViewController *con = [self getCurController];
+        if ([con isKindOfClass:[YaoViewController class]] && [(YaoViewController *)con isContentShow]) {
+            _onlyShowRelatedFang = YES;
+        }
+    }
+    [app.littleWindowStack addObject:self];
+    
+    NSString *right = [DataCache getStandardYaoName:yao];
+    
+    NSMutableString *strOut = [NSMutableString new];
+    [[DataCache sharedData].fangData enumerateObjectsUsingBlock:^(HH2SectionData *obj, NSUInteger idx, BOOL *stop){
+        NSMutableString *strIn = [NSMutableString new];
+        __block int i = 0;
+        [obj.data enumerateObjectsUsingBlock:^(DataItem *obj2, NSUInteger idx2, BOOL *stop2){
+            [((Fang *)obj2).standardYaoList enumerateObjectsUsingBlock:^(YaoUse *obj3, NSUInteger idx3, BOOL *stop3){
+                if ([DataCache name:yao isEqualToName:obj3.showName isFang:NO]) {
+                    i++;
+                    *stop3 = YES;
 //                    [strIn appendFormat:@"$f{%@}，", obj2.fangList.firstObject];
-//                }
-//            }];
-//        }];
-//        if (idx > 0) {
-//            [strOut appendString:@"\r\r"];
-//        }
-//        if (strIn.length > 0) {
-//            [strOut appendFormat:@"$m{%@}-$a{含“$v{%@}”凡%d方：}\r%@",obj.header, right, i, strIn];
-//        }else{
-//            [strOut appendFormat:@"$m{%@}-$a{含“$v{%@}”凡%d方。}",obj.header, right, i];
-//        }
-//    }];
+                    [strIn appendString:[(Fang *)obj2 getFangNameLinkWithYaoWeight:obj3.showName]];
+                    [strIn appendString:@"，"];
+                }
+            }];
+        }];
+        if (idx > 0) {
+            [strOut appendString:@"\r\r"];
+        }
+        if (strIn.length > 0) {
+            [strOut appendFormat:@"$m{%@}-$a{含“$v{%@}”凡%d方：}\r%@",obj.header, right, i, strIn];
+        }else{
+            [strOut appendFormat:@"$m{%@}-$a{含“$v{%@}”凡%d方。}",obj.header, right, i];
+        }
+    }];
     NSMutableAttributedString *text_ = [NSMutableAttributedString new];
     if (!_onlyShowRelatedFang) {
         [text_ appendAttributedString:[self getYaoContent:text]];
         [text_ appendAttributedString:[[NSAttributedString alloc] initWithString:@"\r\r"]];
     }
-//    [text_ appendAttributedString:[strOut parseText:YES]];
+    [text_ appendAttributedString:[strOut parseText:YES]];
     
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
     CGFloat edge = 16;
@@ -147,22 +145,11 @@
 
 - (NSMutableAttributedString *)getYaoContent:(NSString *)yaoText
 {
-//    __block NSMutableAttributedString *target = nil;
-//    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//    NSDictionary *dict = app.yaoAliasDict;
-//    NSString *right = dict[yaoText] ? : yaoText;
-//    [app.yaoData.firstObject.data enumerateObjectsUsingBlock:^(DataItem *obj, NSUInteger idx, BOOL *stop){
-//        NSString *left = dict[obj.yaoList.firstObject] ? : obj.yaoList.firstObject;
-//        if ([left isEqualToString:right]) {
-//            target = obj.attributedText;
-//            *stop = YES;
-//        }
-//    }];
-//    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString: @"未查到！"];
-//    [str yy_setColor:[UIColor redColor] range:NSMakeRange(0, str.length)];
-//    [str yy_setStrokeWidth:@(-4) range:NSMakeRange(0, str.length)];
-//    return target ? : str;
-    return nil;
+    NSMutableAttributedString *target = [DataCache getYaoContentByName:yaoText];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString: @"未查到！"];
+    [str yy_setColor:[UIColor redColor] range:NSMakeRange(0, str.length)];
+    [str yy_setStrokeWidth:@(-4) range:NSMakeRange(0, str.length)];
+    return target ? : str;
 }
 
 - (void)gotoYaoZheng:(UIButton *)btn
@@ -183,7 +170,7 @@
 - (void)onTap:(id)sender
 {
     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//    [app.littleWindowStack removeObjectAtIndex:app.littleWindowStack.count - 1];
+    [app.littleWindowStack removeObjectAtIndex:app.littleWindowStack.count - 1];
     [self removeFromSuperview];
 }
 

@@ -28,4 +28,6 @@
 @property (strong,nonatomic) NSArray<YaoUse *> *extraYaoList;    // 药物加减
 @property (strong,nonatomic,readonly) NSArray<YaoUse *> *helpYaoList; // 辅助药物／甘烂水等
 
+- (NSString *)getFangNameLinkWithYaoWeight:(NSString *)yao;
+
 @end

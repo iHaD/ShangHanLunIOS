@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class LittleWindow;
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (strong,nonatomic) NSMutableArray<LittleWindow *> *littleWindowStack;
+
+// 小窗口tableView的数据
+@property (strong,nonatomic) NSMutableArray<NSArray<NSArray<NSAttributedString *> *> *> *list; // 用以保存弹出框中的条文列表
+@property (strong,nonatomic) NSMutableArray<NSArray<NSString *> *> *listHeader;
+@property (strong,nonatomic) NSMutableArray<NSArray<NSArray<NSNumber *> *> *> *heightList;
 
 @end
 

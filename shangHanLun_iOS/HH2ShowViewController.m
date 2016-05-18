@@ -217,12 +217,12 @@
                 NSArray<NSString *> *nameList;
                 if ([sText containsString:@"y"]) {
                     isLink = YES;
-                    found = [self findYao:sText inDataItem:obj];
                     sText = [sText stringByReplacingOccurrencesOfString:@"y" withString:@""];
+                    found = [self findYao:sText inDataItem:obj];
                 }else if ([sText containsString:@"f"]) {
                     isLink = YES;
-                    found = [self findFang:sText inDataItem:obj];
                     sText = [sText stringByReplacingOccurrencesOfString:@"f" withString:@""];
+                    found = [self findFang:sText inDataItem:obj];
                 }else{
                     found = [obj.attributedText.string rangeOfString:sText options:NSRegularExpressionSearch].location != NSNotFound;
                 }
@@ -335,11 +335,22 @@
 
 - (BOOL)findFang:(NSString *)fang inDataItem:(DataItem *)item
 {
-    return NO;
+    return [self findName:fang inDataItem:item isFang:YES];
 }
 
-- (BOOL)findYao:(NSString *)fang inDataItem:(DataItem *)item
+- (BOOL)findYao:(NSString *)yao inDataItem:(DataItem *)item
 {
+    return [self findName:yao inDataItem:item isFang:NO];
+}
+
+- (BOOL)findName:(NSString *)name inDataItem:(DataItem *)item isFang:(BOOL)isFang
+{
+    NSArray *arr = isFang ? item.fangList : item.yaoList;
+    for (NSString *f in arr) {
+        if ([DataCache name:f isEqualToName:name isFang:isFang]) {
+            return YES;
+        }
+    }
     return NO;
 }
 

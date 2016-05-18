@@ -229,9 +229,9 @@
         NSString *cls = [res.string substringWithRange:NSMakeRange(pn + 1, 1)];
         NSRange innerRange = NSMakeRange(pn + 3, range.location - pn - 3);
         
-        if (![@"ufw" containsString:cls]) {
+//        if (![@"ufw" containsString:cls]) {
             [res yy_setColor:[dict valueForKey:cls] range:innerRange];
-        }
+//        }
         // 药量与注释与隐藏皆小字显示
         if ([@"wah" containsString:cls]) {
             [res yy_setFont:config.smallFont range:innerRange];

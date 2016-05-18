@@ -19,4 +19,14 @@
     return [YaoUse class];
 }
 
+- (NSString *)getFangNameLinkWithYaoWeight:(NSString *)yao
+{
+    for (YaoUse *use in _standardYaoList) {
+        if ([DataCache name:use.showName isEqualToName:yao isFang:NO]) {
+            return [NSString stringWithFormat:@"$f{%@}$w{(%@%@)}", _name, use.amount, use.extraProcess];
+        }
+    }
+    return @"";
+}
+
 @end

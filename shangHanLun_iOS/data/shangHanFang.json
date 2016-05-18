@@ -1099,62 +1099,65 @@
         "showName" : "半夏",
         "extraProcess" : "切"
       },
-      {
-        "amount" : "三两",
-        "yaoID" : 60,
-        "weight" : 0,
-        "showName" : "栝楼实",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 38,
-        "weight" : 0,
-        "showName" : "栝楼根",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 5,
-        "weight" : 0,
-        "showName" : "芍药",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 23,
-        "weight" : 0,
-        "showName" : "牡蛎",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 7,
-        "weight" : 0,
-        "showName" : "茯苓",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 1,
-        "weight" : 0,
-        "showName" : "桂枝",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 22,
-        "weight" : 0,
-        "showName" : "五味子",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 6,
-        "weight" : 0,
-        "showName" : "干姜",
-        "extraProcess" : "切"
-      }
+      
+    ],
+    "extraYaoList":[
+                     {
+                     "amount" : "三两",
+                     "yaoID" : 60,
+                     "weight" : 0,
+                     "showName" : "栝楼实",
+                     "extraProcess" : "切"
+                     },
+                     {
+                     "amount" : "三两",
+                     "yaoID" : 38,
+                     "weight" : 0,
+                     "showName" : "栝楼根",
+                     "extraProcess" : "切"
+                     },
+                     {
+                     "amount" : "三两",
+                     "yaoID" : 5,
+                     "weight" : 0,
+                     "showName" : "芍药",
+                     "extraProcess" : "切"
+                     },
+                     {
+                     "amount" : "三两",
+                     "yaoID" : 23,
+                     "weight" : 0,
+                     "showName" : "牡蛎",
+                     "extraProcess" : "切"
+                     },
+                     {
+                     "amount" : "三两",
+                     "yaoID" : 7,
+                     "weight" : 0,
+                     "showName" : "茯苓",
+                     "extraProcess" : "切"
+                     },
+                     {
+                     "amount" : "三两",
+                     "yaoID" : 1,
+                     "weight" : 0,
+                     "showName" : "桂枝",
+                     "extraProcess" : "切"
+                     },
+                     {
+                     "amount" : "三两",
+                     "yaoID" : 22,
+                     "weight" : 0,
+                     "showName" : "五味子",
+                     "extraProcess" : "切"
+                     },
+                     {
+                     "amount" : "三两",
+                     "yaoID" : 6,
+                     "weight" : 0,
+                     "showName" : "干姜",
+                     "extraProcess" : "切"
+                     }
     ],
     "text" : "19、$f{小柴胡汤} 7味 \n$u{柴胡}$w{半斤}    $u{黄芩}    $u{人参}    $u{甘草}$w{炙}    $u{生姜}$w{各三两（切）}    $u{大枣}$w{十二枚。擘}    $u{半夏}$w{半升(洗)}\n\t上七味。以水一斗二升。煮取六升。去滓。再煎取三升。温服一升。日三服。若胸中烦而不呕者。去$u{半夏}、$u{人参}。加$u{栝楼实}$w{一枚}。若渴。去$u{半夏}。加$u{人参}。$w{合前成四两半}    $u{栝楼根}$w{四两}。若腹中痛者。去$u{黄芩}。加$u{芍药}$w{三两}。若胁下痞硬。去$u{大枣}。加$u{牡蛎}$w{四两}。若心下悸、小便不利者。去$u{黄芩}。加$u{茯苓}$w{四两}。若不渴。外有微热者。去$u{人参}。加$u{桂枝}$w{三两}。温覆微汗愈。若咳者。去$u{人参}、$u{大枣}、$u{生姜}。加$u{五味子}$w{半升}    $u{干姜}$w{二两}。",
     "fangList" : [

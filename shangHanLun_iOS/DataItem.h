@@ -13,7 +13,7 @@
 @interface DataItem : JSONModel
 @property (assign,nonatomic,readonly) NSInteger ID;
 @property (strong,nonatomic,readonly) NSString *text;
-@property (strong,nonatomic, readonly) NSIndexPath *indexPath;
+@property (strong,nonatomic,readonly) NSIndexPath *indexPath;
 @property (strong,nonatomic,readonly) NSArray<NSString *> *fangList;
 @property (strong,nonatomic,readonly) NSArray<NSString *> *yaoList;
 

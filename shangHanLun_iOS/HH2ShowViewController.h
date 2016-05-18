@@ -61,6 +61,6 @@ typedef NS_ENUM(NSUInteger, LinkClass) {
 - (void)copyItemsToPastboard:(NSArray<NSIndexPath *> *)arr;
 
 - (BOOL)findFang:(NSString *)fang inDataItem:(DataItem *)item;
-- (BOOL)findYao:(NSString *)fang inDataItem:(DataItem *)item;
+- (BOOL)findYao:(NSString *)yao inDataItem:(DataItem *)item;
 
 @end

@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "HH2SearchCell.h"
 #import "YYText.h"
+#import "Fang.h"
 
 @interface FangViewController ()
 {
@@ -48,6 +49,17 @@
     NSString *text = [view.text substringToIndex:MIN(view.text.length,[view.text rangeOfString:@" "].location)];
     view.text = [text stringByAppendingFormat:@"    凡%d方", (int)(arr.count - 1)];
     return view;
+}
+
+- (BOOL)findYao:(NSString *)yao inDataItem:(DataItem *)item
+{
+    Fang *f = (Fang *)item;
+    for (YaoUse *yaoUse in f.standardYaoList) {
+        if ([DataCache name:yaoUse.showName isEqualToName:yao isFang:NO]) {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -109,6 +109,7 @@
         unsigned int count;
         objc_property_t *properties = class_copyPropertyList(cls, &count);
         if (properties == NULL) {
+            cls = cls.superclass;
             continue;
         }
         for (int i = 0; i < count; i++) {

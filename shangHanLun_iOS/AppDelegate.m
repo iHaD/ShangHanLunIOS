@@ -12,6 +12,7 @@
 #import "YaoViewController.h"
 #import "FangViewController.h"
 #import "ViewController.h"
+#import "HH2SearchCell.h"
 
 @interface AppDelegate () <UINavigationControllerDelegate>
 {
@@ -26,6 +27,12 @@
     // Override point for customization after application launch.
     HH2SearchConfig *config = [HH2SearchConfig sharedConfig];
     DataCache *cache = [DataCache sharedData];
+    
+    _littleWindowStack = [NSMutableArray new];
+    
+    _list = [NSMutableArray new];
+    _listHeader = [NSMutableArray new];
+    _heightList = [NSMutableArray new];
     
     ViewController *vc = [[ViewController alloc] initWithStyle:UITableViewStylePlain data:cache.itemData];
     vc.bookName = @"伤寒论";
@@ -117,6 +124,39 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Little Window TableView Datasource & Delegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return _list.lastObject.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _list.lastObject[section].count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *reuse = [self.description stringByAppendingString:@"listReuse"];
+    HH2SearchCell *cell = [tableView dequeueReusableCellWithIdentifier:reuse];
+    if (!cell) {
+        cell = [[HH2SearchCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuse];
+    }
+    cell.backgroundColor = [UIColor whiteColor];
+    cell.attributedText = _list.lastObject[indexPath.section][indexPath.row];
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return _heightList.lastObject[indexPath.section][indexPath.row].floatValue;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return _listHeader.lastObject[section];
 }
 
 @end

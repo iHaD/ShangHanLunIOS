@@ -113,7 +113,7 @@ NSDictionary *_fangAliasDict;
     s.headerView = [HH2SearchHeaderView new];
     [d addObject:s];
     _yaoData = d;
-    _yao = arr;
+    _yao = (NSArray<Yao *> *)s.data;
 }
 
 - (void)initAlias
@@ -239,6 +239,16 @@ NSDictionary *_fangAliasDict;
         return YES;
     }
     return NO;
+}
+
++ (NSMutableAttributedString *)getYaoContentByName:(NSString *)yaoName
+{
+    for (Yao *y in data.yao) {
+        if ([self name:yaoName isEqualToName:y.name isFang:NO]) {
+            return y.attributedText;
+        }
+    }
+    return nil;
 }
 
 @end

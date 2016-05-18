@@ -26,4 +26,6 @@
 
 + (BOOL)name:(NSString *)name isEqualToName:(NSString *)text isFang:(BOOL)isFang;
 
++ (NSMutableAttributedString *)getYaoContentByName:(NSString *)yaoName;
+
 @end
