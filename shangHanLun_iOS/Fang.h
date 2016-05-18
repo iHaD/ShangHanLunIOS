@@ -18,6 +18,9 @@
 @end
 
 @interface Fang : DataItem
+{
+    NSString *curYao; // 当前排序的药名
+}
 
 @property (strong,nonatomic,readonly) NSString *name;
 @property (assign,nonatomic,readonly) NSInteger yaoCount;       // 几味
@@ -29,5 +32,8 @@
 @property (strong,nonatomic,readonly) NSArray<YaoUse *> *helpYaoList; // 辅助药物／甘烂水等
 
 - (NSString *)getFangNameLinkWithYaoWeight:(NSString *)yao;
+
+- (NSComparisonResult)compare:(Fang *)another;
+- (YaoUse *)getYaoUseByName:(NSString *)name;
 
 @end

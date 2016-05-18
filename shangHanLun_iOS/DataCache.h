@@ -26,6 +26,9 @@
 
 + (BOOL)name:(NSString *)name isEqualToName:(NSString *)text isFang:(BOOL)isFang;
 
+// 根据药名获取药物本经内容
 + (NSMutableAttributedString *)getYaoContentByName:(NSString *)yaoName;
+
++ (NSArray<HH2SectionData *> *)getFangListByYaoNameInStandardList:(NSString *)name;
 
 @end

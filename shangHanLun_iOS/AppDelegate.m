@@ -26,6 +26,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     HH2SearchConfig *config = [HH2SearchConfig sharedConfig];
+    config = config;
     DataCache *cache = [DataCache sharedData];
     
     _littleWindowStack = [NSMutableArray new];

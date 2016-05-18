@@ -7,37 +7,36 @@
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
-        "extraProcess" : "切"
+        "extraProcess" : "去皮"
       },
       {
         "amount" : "三两",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "芍药",
-        "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
-        "extraProcess" : "切"
+        "extraProcess" : "炙"
       },
       {
         "amount" : "三两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
-        "extraProcess" : "切"
+        "extraProcess" : "擘"
       }
     ],
     "text" : "1、$f{桂枝汤} 5味 \n$u{桂枝}$w{三两。去皮}    $u{芍药}$w{三两}    $u{甘草}$w{二两。炙}    $u{生姜}$w{三两。切}    $u{大枣}$w{十二枚。擘}\n\t上五味。㕮咀三味。以水七升。微火煮取三升。去滓。适寒温。服一升。服已。须臾啜热稀粥一升余。以助药力。温覆令一时许。遍身漐漐。微似有汗者益佳。不可令如水流漓。病必不除。若一服汗出病差。停后服。不必尽剂。若不汗。更服依前法。又不汗。后服小促其间。半日许。令三服尽。若病重者。一日一夜服。周时观之。服一剂尽。病证犹在者。更作服。若汗不出。乃服至二三剂。禁生冷粘滑肉面五辛酒酪臭恶等物。",
@@ -60,53 +59,51 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "四两",
         "yaoID" : 57,
-        "weight" : 0,
+        "weight" : 400,
         "showName" : "葛根",
-        "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 11,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "麻黄",
-        "extraProcess" : "切"
+        "extraProcess" : "去节"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "芍药",
-        "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
-        "extraProcess" : "切"
+        "extraProcess" : "炙"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
-        "extraProcess" : "切"
+        "extraProcess" : "擘"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "桂枝",
-        "extraProcess" : "切"
+        "extraProcess" : "去皮"
       }
     ],
     "text" : "2、$f{桂枝加葛根汤} 7味 \n$u{葛根}$w{四两}    $u{麻黄}$w{三两。去节}    $u{芍药}$w{二两}    $u{生姜}$w{三两。切}    $u{甘草}$w{二两。炙}    $u{大枣}$w{十二枚。擘}    $u{桂枝}$w{二两。去皮}\n\t上七味。以水一斗。先煮麻黄葛根。减二升。去上沫。内诸药。煮取三升。去滓。温服一升。覆取微似汗。不须啜粥。余如桂枝法。将息及禁忌。$a{臣亿等谨按仲景本论。太阳中风自汗用桂枝。伤寒无汗用麻黄。今证云汗出恶风而方中有麻黄。恐非本意也。第三卷有葛根汤证云。无汗恶风。正与此方同。是合用麻黄也。此云桂枝加葛根汤。恐是桂枝中但加葛根耳。}",
@@ -133,51 +130,50 @@
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
-        "extraProcess" : "切"
+        "extraProcess" : "去皮"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
-        "extraProcess" : "切"
+        "extraProcess" : "炙"
       },
       {
         "amount" : "三两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "芍药",
-        "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
-        "extraProcess" : "切"
+        "extraProcess" : "擘"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 19,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "厚朴",
-        "extraProcess" : "切"
+        "extraProcess" : "炙去皮"
       },
       {
-        "amount" : "三两",
+        "amount" : "50枚",
         "yaoID" : 17,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "杏仁",
-        "extraProcess" : "切"
+        "extraProcess" : "去皮尖"
       }
     ],
     "text" : "3、$f{桂枝加厚朴杏子汤} 7味 \n$u{桂枝}$w{三两。去皮}    $u{甘草}$w{二两。炙}    $u{生姜}$w{三两。切}    $u{芍药}$w{三两}    $u{大枣}$w{十二枚。擘}    $u{厚朴}$w{二两。炙去皮}    $u{杏仁}$w{五十枚。去皮尖}\n\t上七味。以水七升。微火煮取三升。去滓。温服一升。覆取微似汗。",
@@ -204,44 +200,43 @@
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
-        "extraProcess" : "切"
+        "extraProcess" : "去皮"
       },
       {
         "amount" : "三两",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "芍药",
-        "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "甘草",
-        "extraProcess" : "切"
+        "extraProcess" : "炙"
       },
       {
         "amount" : "三两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
-        "extraProcess" : "切"
+        "extraProcess" : "擘"
       },
       {
-        "amount" : "三两",
+        "amount" : "1枚",
         "yaoID" : 9,
-        "weight" : 0,
+        "weight" : 100,
         "showName" : "附子",
-        "extraProcess" : "切"
+        "extraProcess" : "炮去皮破八片"
       }
     ],
     "text" : "4、$f{桂枝加附子汤} 6味 \n$u{桂枝}$w{三两。去皮}    $u{芍药}$w{三两}    $u{甘草}$w{三两。炙}    $u{生姜}$w{三两。切}    $u{大枣}$w{十二枚。擘}    $u{附子}$w{一枚。炮去皮破八片}\n\t上六味。以水七升。煮取三升。去滓。温服一升。【本云桂枝汤。今加附子。将息如前法。】",
@@ -267,30 +262,30 @@
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
-        "extraProcess" : "切"
+        "extraProcess" : "去皮"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
-        "extraProcess" : "切"
+        "extraProcess" : "炙"
       },
       {
         "amount" : "三两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
-        "extraProcess" : "切"
+        "extraProcess" : "擘"
       }
     ],
     "text" : "5、$f{桂枝去芍药汤} 4味 \n$u{桂枝}$w{三两。去皮}    $u{甘草}$w{二两。炙}    $u{生姜}$w{三两。切}    $u{大枣}$w{十二枚。擘}\n\t上四味。以水七升。煮取三升。去滓。温服一升。【本云桂枝汤。今去芍药。将息如前法】",
@@ -314,35 +309,35 @@
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "1枚",
         "yaoID" : 9,
-        "weight" : 0,
+        "weight" : 100,
         "showName" : "附子",
         "extraProcess" : "切"
       }
@@ -367,51 +362,51 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "一两十六铢",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 166,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一两",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 100,
         "showName" : "芍药",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 100,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 100,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一两",
         "yaoID" : 11,
-        "weight" : 0,
+        "weight" : 100,
         "showName" : "麻黄",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "4枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 40,
         "showName" : "大枣",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "24枚",
         "yaoID" : 17,
-        "weight" : 0,
+        "weight" : 240,
         "showName" : "杏仁",
         "extraProcess" : "切"
       }
@@ -438,51 +433,51 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "一两十七铢",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 171,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一两六铢",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 125,
         "showName" : "芍药",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "十六铢",
         "yaoID" : 11,
-        "weight" : 0,
+        "weight" : 66,
         "showName" : "麻黄",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一两六铢",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 125,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "16个",
         "yaoID" : 17,
-        "weight" : 0,
+        "weight" : 160,
         "showName" : "杏仁",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一两二铢",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 108,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "5枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 50,
         "showName" : "大枣",
         "extraProcess" : "切"
       }
@@ -509,37 +504,37 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "六两",
         "yaoID" : 40,
-        "weight" : 0,
+        "weight" : 600,
         "showName" : "知母",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一斤",
         "yaoID" : 18,
-        "weight" : 0,
+        "weight" : 1600,
         "showName" : "石膏",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "六合",
         "yaoID" : 39,
-        "weight" : 0,
+        "weight" : 60,
         "showName" : "粳米",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 8,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "人参",
         "extraProcess" : "切"
       }
@@ -1516,22 +1511,22 @@
   },
   {
     "yaoCount" : 2,
-    "drinkNum" : 3,
+    "drinkNum" : 1,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "四两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 400,
         "showName" : "桂枝",
-        "extraProcess" : "切"
+        "extraProcess" : "去皮"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
         "weight" : 0,
         "showName" : "甘草",
-        "extraProcess" : "切"
+        "extraProcess" : "炙"
       }
     ],
     "text" : "25、$f{桂枝甘草汤} 2味 \n$u{桂枝}$w{四两。去皮}    $u{甘草}$w{二两。炙}\n\t上二味。以水三升。煮取一升。去滓。顿服。",

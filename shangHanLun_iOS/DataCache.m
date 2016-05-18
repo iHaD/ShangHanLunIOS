@@ -81,6 +81,9 @@ NSDictionary *_fangAliasDict;
     if (config.showJinKui != ShowJinKuiNone) {
         [self initFang:@"jinKuiFang" to:&target withHeader:@"金匮要略方" section:section];
         _jinKuiFang = (NSArray<Fang *> *)target.firstObject.data;
+        if (!_fangData) {
+            _fangData = [NSArray new];
+        }
         _fangData = [_fangData arrayByAddingObjectsFromArray:target];
     }
 }
@@ -249,6 +252,33 @@ NSDictionary *_fangAliasDict;
         }
     }
     return nil;
+}
+
++ (NSArray<HH2SectionData *> *)getFangListByYaoNameInStandardList:(NSString *)name
+{
+    NSMutableArray *arr = [NSMutableArray new];
+    for (HH2SectionData *sec in data.fangData) {
+        NSMutableArray *arrIn = [NSMutableArray new];
+        for (Fang *f in sec.data) {
+            BOOL has = NO;
+            for (YaoUse *use in f.standardYaoList) {
+                if ([self name:name isEqualToName:use.showName isFang:NO]) {
+                    has = YES;
+                    break;
+                }
+            }
+            if (has) {
+                [f setValue:name forKey:@"curYao"];
+                [arrIn addObject:f];
+            }
+        }
+        HH2SectionData *d = [[HH2SectionData alloc] initWithData:arrIn section:sec.section];
+        if (sec.header) {
+            d.header = sec.header;
+        }
+        [arr addObject:d];
+    }
+    return arr;
 }
 
 @end

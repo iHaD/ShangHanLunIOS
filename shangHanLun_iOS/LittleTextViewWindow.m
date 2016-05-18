@@ -43,29 +43,16 @@
     NSString *right = [DataCache getStandardYaoName:yao];
     
     NSMutableString *strOut = [NSMutableString new];
-    [[DataCache sharedData].fangData enumerateObjectsUsingBlock:^(HH2SectionData *obj, NSUInteger idx, BOOL *stop){
-        NSMutableString *strIn = [NSMutableString new];
-        __block int i = 0;
-        [obj.data enumerateObjectsUsingBlock:^(DataItem *obj2, NSUInteger idx2, BOOL *stop2){
-            [((Fang *)obj2).standardYaoList enumerateObjectsUsingBlock:^(YaoUse *obj3, NSUInteger idx3, BOOL *stop3){
-                if ([DataCache name:yao isEqualToName:obj3.showName isFang:NO]) {
-                    i++;
-                    *stop3 = YES;
-//                    [strIn appendFormat:@"$f{%@}，", obj2.fangList.firstObject];
-                    [strIn appendString:[(Fang *)obj2 getFangNameLinkWithYaoWeight:obj3.showName]];
-                    [strIn appendString:@"，"];
-                }
-            }];
-        }];
-        if (idx > 0) {
-            [strOut appendString:@"\r\r"];
-        }
-        if (strIn.length > 0) {
-            [strOut appendFormat:@"$m{%@}-$a{含“$v{%@}”凡%d方：}\r%@",obj.header, right, i, strIn];
-        }else{
-            [strOut appendFormat:@"$m{%@}-$a{含“$v{%@}”凡%d方。}",obj.header, right, i];
-        }
-    }];
+    NSArray<HH2SectionData *> *fangList = [DataCache getFangListByYaoNameInStandardList:yao];
+    for (HH2SectionData *sec in fangList) {
+        NSArray<Fang *> *old = (NSArray<Fang *> *)sec.data;
+        NSArray<Fang *> *fl_ = [old sortedArrayUsingSelector:@selector(compare:)];
+        [strOut appendFormat:@"$m{%@}-$a{含“$v{%@}”凡%ld方：}\r%@",sec.header, right, fl_.count, [self getFangStringList:fl_]];
+        [strOut appendString:@"\r\r"];
+    }
+    [strOut deleteCharactersInRange:NSMakeRange(strOut.length - 2, 2)];
+    
+
     NSMutableAttributedString *text_ = [NSMutableAttributedString new];
     if (!_onlyShowRelatedFang) {
         [text_ appendAttributedString:[self getYaoContent:text]];
@@ -112,7 +99,6 @@
     
     NSMutableAttributedString *str = text_;
     str.yy_lineSpacing = 4;
-    str.yy_font = [UIFont systemFontOfSize:17];
     yyTextView.attributedText = str;
     
     btnCopy = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -141,6 +127,16 @@
     [self addSubview:arrow];
     
     return self;
+}
+
+- (NSString *)getFangStringList:(NSArray<Fang *> *)arr
+{
+    NSMutableString *strIn = [NSMutableString new];
+    [arr enumerateObjectsUsingBlock:^(Fang *obj2, NSUInteger idx2, BOOL *stop2){
+        [strIn appendString:[(Fang *)obj2 getFangNameLinkWithYaoWeight:[obj2 valueForKey:@"curYao"]]];
+        [strIn appendString:@"，"];
+    }];
+    return strIn;
 }
 
 - (NSMutableAttributedString *)getYaoContent:(NSString *)yaoText
