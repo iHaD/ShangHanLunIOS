@@ -106,14 +106,13 @@
     return ret;
 }
 
-/*- (BOOL)isInFangContext
+- (BOOL)isInFangContext
 {
     __block BOOL ret = YES;
     [_text enumerateAttribute:NSUnderlineStyleAttributeName inRange:NSMakeRange(0, _text.length) options:NSAttributedStringEnumerationLongestEffectiveRangeNotRequired usingBlock:^(NSNumber *  _Nullable value, NSRange range, BOOL * _Nonnull stop) {
         if (value.integerValue == NSUnderlineStyleSingle) {
             *stop = YES;
-            AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-            if (range.location == 0 || ![[_text.string substringWithRange:NSMakeRange(range.location - 1, 1)] isEqualToString:@"、"] || ![app hasThisFang:[_text.string substringWithRange:range]] || [_text.string hasPrefix:@"*"]) {
+            if (range.location == 0 || ![[_text.string substringWithRange:NSMakeRange(range.location - 1, 1)] isEqualToString:@"、"] || ![DataCache hasFang:[_text.string substringWithRange:range]] || [_text.string hasPrefix:@"*"]) {
                 ret = NO;
             }
         }
@@ -127,13 +126,12 @@
     [_text enumerateAttribute:NSUnderlineStyleAttributeName inRange:NSMakeRange(0, _text.length) options:NSAttributedStringEnumerationLongestEffectiveRangeNotRequired usingBlock:^(NSNumber *  _Nullable value, NSRange range, BOOL * _Nonnull stop) {
         if (value.integerValue == NSUnderlineStyleSingle) {
             *stop = YES;
-            AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-            if (range.location == 0 || ![[_text.string substringWithRange:NSMakeRange(range.location - 1, 1)] isEqualToString:@"、"] || ![app hasThisYao:[_text.string substringWithRange:range]]) {
+            if (range.location == 0 || ![[_text.string substringWithRange:NSMakeRange(range.location - 1, 1)] isEqualToString:@"、"] || ![DataCache hasYao:[_text.string substringWithRange:range]]) {
                 ret = NO;
             }
         }
     }];
     return ret;
-}*/
+}
 
 @end

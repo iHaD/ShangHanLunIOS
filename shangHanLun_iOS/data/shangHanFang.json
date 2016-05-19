@@ -3937,7 +3937,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "三枚炮",
+        "amount" : "3枚炮",
         "yaoID" : 9,
         "weight" : 300,
         "showName" : "附子",
@@ -3985,7 +3985,7 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三枚炮",
+        "amount" : "3枚炮",
         "yaoID" : 9,
         "weight" : 300,
         "showName" : "附子",

@@ -24,6 +24,9 @@
 + (NSString *)getStandardYaoName:(NSString *)name;
 + (NSString *)getStandardFangName:(NSString *)name;
 
++ (BOOL)hasYao:(NSString *)name;
++ (BOOL)hasFang:(NSString *)name;
+
 + (BOOL)name:(NSString *)name isEqualToName:(NSString *)text isFang:(BOOL)isFang;
 
 // 根据药名获取药物本经内容

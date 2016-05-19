@@ -47,7 +47,7 @@
     for (HH2SectionData *sec in fangList) {
         NSArray<Fang *> *old = (NSArray<Fang *> *)sec.data;
         NSArray<Fang *> *fl_ = [old sortedArrayUsingSelector:@selector(compare:)];
-        [strOut appendFormat:@"$m{%@}-$a{含“$v{%@}”凡%ld方：}\r%@",sec.header, right, fl_.count, [self getFangStringList:fl_]];
+        [strOut appendFormat:@"$m{%@}-$m{含“$v{%@}”凡%ld方：}\r%@",sec.header, right, fl_.count, [self getFangStringList:fl_]];
         [strOut appendString:@"\r\r"];
     }
     [strOut deleteCharactersInRange:NSMakeRange(strOut.length - 2, 2)];
@@ -144,6 +144,7 @@
     NSMutableAttributedString *target = [DataCache getYaoContentByName:yaoText];
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString: @"未查到！"];
     [str yy_setColor:[UIColor redColor] range:NSMakeRange(0, str.length)];
+    [str yy_setFont:[UIFont systemFontOfSize:17.0] range:NSMakeRange(0, str.length)];
     [str yy_setStrokeWidth:@(-4) range:NSMakeRange(0, str.length)];
     return target ? : str;
 }

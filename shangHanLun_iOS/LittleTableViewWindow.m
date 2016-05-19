@@ -79,9 +79,6 @@
     }
     
     [cache.itemData enumerateObjectsUsingBlock:^(HH2SectionData *obj, NSUInteger idx, BOOL *stop){
-        if (obj.data.firstObject.ID > 1000) {
-            return;
-        }
         __block NSMutableArray *sec = nil;// [NSMutableArray new];
         __block NSMutableArray *heights = nil;// [NSMutableArray new];
         [obj.data enumerateObjectsUsingBlock:^(DataItem *obj2, NSUInteger idx2, BOOL *stop2){

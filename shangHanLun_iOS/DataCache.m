@@ -132,6 +132,7 @@ NSDictionary *_fangAliasDict;
                       @"枣":@"大枣",
                       @"枣膏":@"大枣",
                       @"生姜汁":@"生姜",
+                      @"姜":@"生姜",
                       
                       @"生地黄":@"地黄",
                       @"干地黄":@"地黄",
@@ -211,6 +212,28 @@ NSDictionary *_fangAliasDict;
     return _fangAliasDict[name]?:name;
 }
 
++ (BOOL)hasYao:(NSString *)name
+{
+    for (Yao *y in data.yao) {
+        if ([self name:y.name isEqualToName:name isFang:NO]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
++ (BOOL)hasFang:(NSString *)name
+{
+    for (HH2SectionData *sec in data.fangData) {
+        for (Fang *f in sec.data) {
+            if ([self name:f.name isEqualToName:name isFang:YES]) {
+                return YES;
+            }
+        }
+    }
+    return NO;
+}
+
 // 第二个参数可以是正则表达式
 + (BOOL)fang:(NSString *)left isEqualToFang:(NSString *)right
 {
@@ -238,7 +261,10 @@ NSDictionary *_fangAliasDict;
     NSString *left = dict[name] ? : name;
     NSString *right = dict[text] ? : text;
     NSRange range = [left rangeOfString:right options:NSRegularExpressionSearch];
-    if ((isFang && range.length > 0) || (!isFang && range.length == left.length)) {
+//    if ((isFang && range.length > 0) || (!isFang && range.length == left.length)) {
+//        return YES;
+//    }
+    if (range.length == left.length) {
         return YES;
     }
     return NO;
