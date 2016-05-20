@@ -2839,7 +2839,7 @@
   },
   {
     "yaoCount" : 6,
-    "drinkNum" : 10,
+    "drinkNum" : 50,
     "height" : 0,
     "standardYaoList" : [
       {
@@ -2864,23 +2864,23 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "半升",
+        "amount" : "半升约150枚",
         "yaoID" : 17,
-        "weight" : 300,
+        "weight" : 1500,
         "showName" : "杏仁",
         "extraProcess" : "切"
       },
       {
         "amount" : "一钱匕",
         "yaoID" : 65,
-        "weight" : 100,
+        "weight" : 500,
         "showName" : "甘遂末",
         "extraProcess" : "切"
       },
       {
         "amount" : "二合",
         "yaoID" : 33,
-        "weight" : 20,
+        "weight" : 100,
         "showName" : "白蜜",
         "extraProcess" : "切"
       }
@@ -4418,7 +4418,7 @@
   },
   {
     "yaoCount" : 7,
-    "drinkNum" : 20,
+    "drinkNum" : 100,
     "height" : 0,
     "standardYaoList" : [
       {
@@ -4457,9 +4457,9 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "一升",
+        "amount" : "一升约300枚",
         "yaoID" : 17,
-        "weight" : 600,
+        "weight" : 3000,
         "showName" : "杏仁",
         "extraProcess" : "切"
       },
@@ -6203,7 +6203,7 @@
       {
         "amount" : "半升",
         "yaoID" : 49,
-        "weight" : 500,
+        "weight" : 300,
         "showName" : "麦门冬",
         "extraProcess" : "切"
       },

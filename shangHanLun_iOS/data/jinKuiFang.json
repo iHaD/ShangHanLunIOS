@@ -326,14 +326,14 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "4片",
+        "amount" : "4片(1服)",
         "yaoID" : 2,
         "weight" : 30,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "1枚",
+        "amount" : "1枚(1服)",
         "yaoID" : 3,
         "weight" : 10,
         "showName" : "大枣",
@@ -2415,59 +2415,61 @@
     "name" : "八味丸"
   },
   {
-    "yaoCount" : 7,
+    "yaoCount" : 6,
     "drinkNum" : 3,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "六两",
         "yaoID" : 11,
-        "weight" : 0,
+        "weight" : 600,
         "showName" : "麻黄",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半斤",
         "yaoID" : 18,
-        "weight" : 0,
+        "weight" : 800,
         "showName" : "石膏",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "四两",
         "yaoID" : 10,
-        "weight" : 0,
+        "weight" : 400,
         "showName" : "白术",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "15枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 150,
         "showName" : "大枣",
         "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 9,
-        "weight" : 0,
-        "showName" : "附子",
-        "extraProcess" : "切"
       }
+    ],
+    "extraYaoList":[
+                    {
+                    "amount" : "1枚炮",
+                    "yaoID" : 9,
+                    "weight" : 100,
+                    "showName" : "附子",
+                    "extraProcess" : "切"
+                    }
     ],
     "text" : "41、$q{《千金方》}$f{越婢加术汤} $m{6味} 治肉极热，则身体津脱，腠理开，汗大泄，厉风气，下焦脚弱。\n\t$u{麻黄}$w{六两}，$u{石膏}$w{半斤}，$u{生姜}$w{三两}，$u{甘草}$w{二两}，$u{白术}$w{四两}，$u{大枣}$w{十五枚}\n\t$s{右六味}，以水六升，先煮麻黄，去上沫，内诸药，煮取三升，分温三服。恶风加$u{附子}$w{一枚，炮}。",
     "fangList" : [
@@ -2493,35 +2495,35 @@
       {
         "amount" : "三两",
         "yaoID" : 25,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "黄芪",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "芍药",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "六两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 600,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
         "extraProcess" : "切"
       }
@@ -2548,49 +2550,49 @@
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "芍药",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 44,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "龙骨",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 23,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "牡蛎",
         "extraProcess" : "切"
       }
@@ -2613,44 +2615,46 @@
   },
   {
     "yaoCount" : 5,
-    "drinkNum" : 3,
+    "drinkNum" : 60,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "三两炮",
         "yaoID" : 125,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "天雄",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "八两",
         "yaoID" : 10,
-        "weight" : 0,
+        "weight" : 800,
         "showName" : "白术",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "六两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 600,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 44,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "龙骨",
         "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 24,
-        "weight" : 0,
-        "showName" : "酒",
-        "extraProcess" : "切"
       }
+    ],
+    "helpYaoList":[
+                   {
+                   "amount" : "酒服",
+                   "yaoID" : 24,
+                   "weight" : 10,
+                   "showName" : "酒",
+                   "extraProcess" : "切"
+                   }
     ],
     "text" : "44、$f{天雄散} $m{4味} $u{天雄}$w{三两，炮}，$u{白术}$w{八两}，$u{桂枝}$w{六两}，$u{龙骨}$w{三两}\n\t$s{右四味}，杵为散，$u{酒}服半钱匕，日三服，不知，稍增之。",
     "fangList" : [
@@ -2674,42 +2678,42 @@
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "六两",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 600,
         "showName" : "芍药",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一升",
         "yaoID" : 56,
-        "weight" : 0,
+        "weight" : 1000,
         "showName" : "胶饴",
         "extraProcess" : "切"
       }
@@ -2730,80 +2734,75 @@
     "name" : "小建中汤"
   },
   {
-    "yaoCount" : 10,
+    "yaoCount" : 7,
     "drinkNum" : 3,
     "height" : 0,
     "standardYaoList" : [
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "六两",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 600,
         "showName" : "芍药",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一升",
         "yaoID" : 56,
-        "weight" : 0,
+        "weight" : 1000,
         "showName" : "胶饴",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一两半",
         "yaoID" : 25,
-        "weight" : 0,
+        "weight" : 150,
         "showName" : "黄芪",
         "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 3,
-        "weight" : 0,
-        "showName" : "枣",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 7,
-        "weight" : 0,
-        "showName" : "茯苓",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 4,
-        "weight" : 0,
-        "showName" : "半夏",
-        "extraProcess" : "切"
       }
+    ],
+    "extraYaoList":[
+                    {
+                    "amount" : "一两",
+                    "yaoID" : 7,
+                    "weight" : 100,
+                    "showName" : "茯苓",
+                    "extraProcess" : "切"
+                    },
+                    {
+                    "amount" : "三两",
+                    "yaoID" : 4,
+                    "weight" : 300,
+                    "showName" : "半夏",
+                    "extraProcess" : "切"
+                    }
     ],
     "text" : "46、$f{黄芪建中汤} $m{7味} $u{桂枝}$w{三两，去皮}，$u{甘草}$w{三两，炙}，$u{大枣}$w{十二枚}，$u{芍药}$w{六两}，$u{生姜}$w{二两}，$u{胶饴}$w{一升}，$u{黄芪}$w{一两半}。\n\t$s{上七味}，以水七升，煮取三升，去滓，内胶饴，更上微火消解。温服一升，日三服。气短胸满者，加$u{生姜}；腹满者，去$u{枣}加$u{茯苓}$w{一两半}。及疗肺虚损不足，补气，加$u{半夏}$w{三两}。",
     "fangList" : [
@@ -2817,7 +2816,6 @@
       "生姜",
       "胶饴",
       "黄芪",
-      "枣",
       "茯苓",
       "半夏"
     ],
@@ -2826,170 +2824,172 @@
   },
   {
     "yaoCount" : 23,
-    "drinkNum" : 3,
+    "drinkNum" : 100,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "三十分",
         "yaoID" : 50,
-        "weight" : 0,
+        "weight" : 750,
         "showName" : "薯蓣",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "十分",
         "yaoID" : 16,
-        "weight" : 0,
+        "weight" : 250,
         "showName" : "当归",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "十分",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 250,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "十分",
         "yaoID" : 128,
-        "weight" : 0,
+        "weight" : 250,
         "showName" : "曲",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "十分",
         "yaoID" : 26,
-        "weight" : 0,
+        "weight" : 250,
         "showName" : "干地黄",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "十分",
         "yaoID" : 127,
-        "weight" : 0,
+        "weight" : 250,
         "showName" : "豆黄卷",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二十八分",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 700,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "七分",
         "yaoID" : 8,
-        "weight" : 0,
+        "weight" : 175,
         "showName" : "人参",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "六分",
         "yaoID" : 20,
-        "weight" : 0,
+        "weight" : 150,
         "showName" : "芎䓖",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "六分",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 150,
         "showName" : "芍药",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "六分",
         "yaoID" : 10,
-        "weight" : 0,
+        "weight" : 150,
         "showName" : "白术",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "六分",
         "yaoID" : 49,
-        "weight" : 0,
+        "weight" : 150,
         "showName" : "麦门冬",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "六分",
         "yaoID" : 17,
-        "weight" : 0,
+        "weight" : 150,
         "showName" : "杏仁",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "五分",
         "yaoID" : 27,
-        "weight" : 0,
+        "weight" : 125,
         "showName" : "柴胡",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "五分",
         "yaoID" : 29,
-        "weight" : 0,
+        "weight" : 125,
         "showName" : "桔梗",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "五分",
         "yaoID" : 7,
-        "weight" : 0,
+        "weight" : 125,
         "showName" : "茯苓",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "七分",
         "yaoID" : 21,
-        "weight" : 0,
+        "weight" : 175,
         "showName" : "阿胶",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "三分",
         "yaoID" : 6,
-        "weight" : 0,
+        "weight" : 75,
         "showName" : "干姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二分",
         "yaoID" : 126,
-        "weight" : 0,
+        "weight" : 50,
         "showName" : "白敛",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "六分",
         "yaoID" : 42,
-        "weight" : 0,
+        "weight" : 150,
         "showName" : "防风",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "100枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 1000,
         "showName" : "大枣",
         "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 33,
-        "weight" : 0,
-        "showName" : "蜜",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 24,
-        "weight" : 0,
-        "showName" : "酒",
-        "extraProcess" : "切"
       }
+    ],
+    "helpYaoList":[
+                   {
+                   "amount" : "和丸",
+                   "yaoID" : 33,
+                   "weight" : 1000,
+                   "showName" : "蜜",
+                   "extraProcess" : "切"
+                   },
+                   {
+                   "amount" : "酒服",
+                   "yaoID" : 24,
+                   "weight" : 10,
+                   "showName" : "酒",
+                   "extraProcess" : "切"
+                   }
     ],
     "text" : "47、$f{薯蓣丸} $m{21味} $u{薯蓣}$w{三十分}，$u{当归}，$u{桂枝}，$u{曲}，$u{干地黄}，$u{豆黄卷}$w{各十分}，$u{甘草}$w{二十八分}，$u{人参}$w{七分}，$u{芎䓖}，$u{芍药}，$u{白术}，$u{麦门冬}，$u{杏仁}$w{各六分}，$u{柴胡}，$u{桔梗}，$u{茯苓}$w{各五分}，$u{阿胶}$w{七分}，$u{干姜}$w{三分}，$u{白敛}$w{二分}，$u{防风}$w{六分}，$u{大枣}$w{百枚，为膏}\n\t$s{右二十一味}，末之，炼$u{蜜}和丸，如弹子大。空腹$u{酒}服一丸，一百丸为剂。",
     "fangList" : [
@@ -3029,37 +3029,37 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "二升",
         "yaoID" : 129,
-        "weight" : 0,
+        "weight" : 2000,
         "showName" : "酸枣仁",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 100,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 40,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "知母",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 7,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "茯苓",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 20,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "芎䓖",
         "extraProcess" : "切"
       }
@@ -3080,107 +3080,109 @@
   },
   {
     "yaoCount" : 14,
-    "drinkNum" : 3,
+    "drinkNum" : 100,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "十分",
         "yaoID" : 12,
-        "weight" : 0,
+        "weight" : 250,
         "showName" : "大黄",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 13,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "黄芩",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一升约267枚",
         "yaoID" : 30,
-        "weight" : 0,
+        "weight" : 2670,
         "showName" : "桃仁",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一升约300枚",
         "yaoID" : 17,
-        "weight" : 0,
+        "weight" : 3000,
         "showName" : "杏仁",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "四两",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 400,
         "showName" : "芍药",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "十两",
         "yaoID" : 26,
-        "weight" : 0,
+        "weight" : 1000,
         "showName" : "干地黄",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一两",
         "yaoID" : 130,
-        "weight" : 0,
+        "weight" : 100,
         "showName" : "干漆",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一升约53个",
         "yaoID" : 104,
-        "weight" : 0,
+        "weight" : 530,
         "showName" : "虻虫",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "100枚",
         "yaoID" : 103,
-        "weight" : 0,
+        "weight" : 1000,
         "showName" : "水蛭",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一升",
         "yaoID" : 131,
-        "weight" : 0,
+        "weight" : 1000,
         "showName" : "蛴螬",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 54,
-        "weight" : 0,
+        "weight" : 150,
         "showName" : "䗪虫",
         "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 33,
-        "weight" : 0,
-        "showName" : "蜜",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 24,
-        "weight" : 0,
-        "showName" : "酒",
-        "extraProcess" : "切"
       }
+    ],
+    "helpYaoList":[
+                   {
+                   "amount" : "和丸",
+                   "yaoID" : 33,
+                   "weight" : 1000,
+                   "showName" : "蜜",
+                   "extraProcess" : "切"
+                   },
+                   {
+                   "amount" : "酒服",
+                   "yaoID" : 24,
+                   "weight" : 10,
+                   "showName" : "酒",
+                   "extraProcess" : "切"
+                   }
     ],
     "text" : "49、$f{大黄䗪虫丸} $m{12味} $u{大黄}$w{十分，蒸}，$u{黄芩}$w{二两}，$u{甘草}$w{三两}，$u{桃仁}$w{一升}，$u{杏仁}$w{一升}，$u{芍药}$w{四两}，$u{干地黄}$w{十两}，$u{干漆}$w{一两}，$u{虻虫}$w{一升}，$u{水蛭}$w{百枚}，$u{蛴螬}$w{一升}，$u{䗪虫}$w{半升}。\n\t$s{右十二味}，末之，炼$u{蜜}和丸小豆大。$u{酒}饮服五丸，日三服。",
     "fangList" : [
@@ -3211,75 +3213,77 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "四两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 400,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 49,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "麦门冬",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 94,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "麻子仁",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 8,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "人参",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 21,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "阿胶",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "30枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "大枣",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一斤",
         "yaoID" : 26,
-        "weight" : 0,
+        "weight" : 1600,
         "showName" : "生地黄",
         "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 24,
-        "weight" : 0,
-        "showName" : "酒",
-        "extraProcess" : "切"
       }
+    ],
+    "helpYaoList":[
+                   {
+                   "amount" : "七升",
+                   "yaoID" : 24,
+                   "weight" : 7000,
+                   "showName" : "酒",
+                   "extraProcess" : "切"
+                   }
     ],
     "text" : "50、$q{附方《千金翼》}$f{炙甘草汤} $m{9味} $a{一云复脉汤。}治虚劳不足，汗出而闷，脉结悸，行动如常，不出百日，危急者，十一日死。另有$q{《外台》}炙甘草汤，治肺痿涎唾多，心中温温液液者。\n\t$u{甘草}$w{四两，炙}，$u{桂枝}，$u{生姜}$w{各三两}，$u{麦门冬}$w{半升}，$u{麻子仁}$w{半升}，$u{人参}，$u{阿胶}$w{各二两}，$u{大枣}$w{三十枚}，$u{生地黄}$w{一斤}\n\t$s{右九味}，以$u{酒}七升，水八升，先煮八味，取三升，去滓，内胶消尽。温服一升，日三服。",
     "fangList" : [
@@ -3302,13 +3306,13 @@
   },
   {
     "yaoCount" : 1,
-    "drinkNum" : 3,
+    "drinkNum" : 10,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "一具",
         "yaoID" : 132,
-        "weight" : 0,
+        "weight" : 100,
         "showName" : "獭肝",
         "extraProcess" : "切"
       }
@@ -3325,20 +3329,20 @@
   },
   {
     "yaoCount" : 2,
-    "drinkNum" : 3,
+    "drinkNum" : 2,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "四两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 400,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 6,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "干姜",
         "extraProcess" : "切"
       }
@@ -3360,65 +3364,65 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "13枚",
         "yaoID" : 109,
-        "weight" : 0,
+        "weight" : 130,
         "showName" : "射干",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "四两",
         "yaoID" : 11,
-        "weight" : 0,
+        "weight" : 400,
         "showName" : "麻黄",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "四两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 400,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 15,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "细辛",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 134,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "紫菀",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 133,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "款冬花",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 22,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "五味子",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "7枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 70,
         "showName" : "大枣",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "8枚大者",
         "yaoID" : 4,
-        "weight" : 0,
+        "weight" : 67,
         "showName" : "半夏",
         "extraProcess" : "切"
       }
@@ -3443,30 +3447,32 @@
   },
   {
     "yaoCount" : 3,
-    "drinkNum" : 3,
+    "drinkNum" : 100,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "八两",
         "yaoID" : 101,
-        "weight" : 0,
+        "weight" : 800,
         "showName" : "皂荚",
         "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 33,
-        "weight" : 0,
-        "showName" : "蜜",
-        "extraProcess" : "切"
-      },
-      {
-        "amount" : "三两",
-        "yaoID" : 3,
-        "weight" : 0,
-        "showName" : "枣膏",
-        "extraProcess" : "切"
       }
+    ],
+    "helpYaoList":[
+                   {
+                   "amount" : "和丸",
+                   "yaoID" : 33,
+                   "weight" : 200,
+                   "showName" : "蜜",
+                   "extraProcess" : "切"
+                   },
+                   {
+                   "amount" : "枣膏和汤",
+                   "yaoID" : 3,
+                   "weight" : 1000,
+                   "showName" : "枣膏",
+                   "extraProcess" : "切"
+                   }
     ],
     "text" : "54、$f{皂荚丸} $m{1味} $u{皂荚}$w{八两，刮去皮，用酥炙}\n\t$s{右一味}，末之，$u{蜜}丸梧子大。以$u{枣膏}和汤服三丸，日三、夜一服。",
     "fangList" : [
@@ -3486,65 +3492,65 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "五两",
         "yaoID" : 19,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "厚朴",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "四两",
         "yaoID" : 11,
-        "weight" : 0,
+        "weight" : 400,
         "showName" : "麻黄",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "如鸡子大",
         "yaoID" : 18,
-        "weight" : 0,
+        "weight" : 750,
         "showName" : "石膏",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升约150枚",
         "yaoID" : 17,
-        "weight" : 0,
+        "weight" : 1500,
         "showName" : "杏仁",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 4,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "半夏",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 6,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "干姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 15,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "细辛",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一升",
         "yaoID" : 69,
-        "weight" : 0,
+        "weight" : 1000,
         "showName" : "小麦",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 22,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "五味子",
         "extraProcess" : "切"
       }
@@ -3569,69 +3575,69 @@
   },
   {
     "yaoCount" : 9,
-    "drinkNum" : 3,
+    "drinkNum" : 10,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 4,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "半夏",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "五两",
         "yaoID" : 107,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "紫参",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "三斤",
         "yaoID" : 135,
-        "weight" : 0,
+        "weight" : 4800,
         "showName" : "泽漆",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "五两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "五两",
         "yaoID" : 136,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "白前",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 13,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "黄芩",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 8,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "人参",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
         "extraProcess" : "切"
       }
@@ -3656,48 +3662,48 @@
   },
   {
     "yaoCount" : 6,
-    "drinkNum" : 3,
+    "drinkNum" : 6,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "七升",
         "yaoID" : 49,
-        "weight" : 0,
+        "weight" : 4200,
         "showName" : "麦门冬",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一升",
         "yaoID" : 4,
-        "weight" : 0,
+        "weight" : 1000,
         "showName" : "半夏",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 8,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "人参",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "三合",
         "yaoID" : 39,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "粳米",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
         "extraProcess" : "切"
       }
@@ -3719,20 +3725,20 @@
   },
   {
     "yaoCount" : 2,
-    "drinkNum" : 3,
+    "drinkNum" : 1,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "弹丸大",
         "yaoID" : 52,
-        "weight" : 0,
+        "weight" : 40,
         "showName" : "葶苈",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "12枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 120,
         "showName" : "大枣",
         "extraProcess" : "切"
       }
@@ -3750,20 +3756,20 @@
   },
   {
     "yaoCount" : 2,
-    "drinkNum" : 3,
+    "drinkNum" : 2,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "一两",
         "yaoID" : 29,
-        "weight" : 0,
+        "weight" : 100,
         "showName" : "桔梗",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
         "extraProcess" : "切"
       }
@@ -3785,44 +3791,44 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "六两",
         "yaoID" : 11,
-        "weight" : 0,
+        "weight" : 600,
         "showName" : "麻黄",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半斤",
         "yaoID" : 18,
-        "weight" : 0,
+        "weight" : 800,
         "showName" : "石膏",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "15枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 150,
         "showName" : "大枣",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
         "weight" : 0,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 4,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "半夏",
         "extraProcess" : "切"
       }
@@ -3850,63 +3856,63 @@
       {
         "amount" : "三两",
         "yaoID" : 11,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "麻黄",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 5,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "芍药",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 15,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "细辛",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 6,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "干姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 22,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "五味子",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 4,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "半夏",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 18,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "石膏",
         "extraProcess" : "切"
       }
@@ -3935,9 +3941,9 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
         "extraProcess" : "切"
       }
@@ -3958,30 +3964,30 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "五两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 8,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "人参",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "四两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 400,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "15枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 150,
         "showName" : "大枣",
         "extraProcess" : "切"
       }
@@ -4007,35 +4013,35 @@
       {
         "amount" : "三两",
         "yaoID" : 1,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "桂枝",
         "extraProcess" : "切"
       },
       {
         "amount" : "三两",
         "yaoID" : 2,
-        "weight" : 0,
+        "weight" : 300,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "二两",
         "yaoID" : 0,
-        "weight" : 0,
+        "weight" : 200,
         "showName" : "甘草",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "10枚",
         "yaoID" : 3,
-        "weight" : 0,
+        "weight" : 100,
         "showName" : "大枣",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "1枚",
         "yaoID" : 101,
-        "weight" : 0,
+        "weight" : 20,
         "showName" : "皂荚",
         "extraProcess" : "切"
       }
@@ -4056,27 +4062,27 @@
   },
   {
     "yaoCount" : 3,
-    "drinkNum" : 3,
+    "drinkNum" : 10,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "三分",
         "yaoID" : 29,
-        "weight" : 0,
+        "weight" : 75,
         "showName" : "桔梗",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "三分",
         "yaoID" : 78,
-        "weight" : 0,
+        "weight" : 75,
         "showName" : "贝母",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一分",
         "yaoID" : 66,
-        "weight" : 0,
+        "weight" : 25,
         "showName" : "巴豆",
         "extraProcess" : "切"
       }
@@ -4095,34 +4101,34 @@
   },
   {
     "yaoCount" : 4,
-    "drinkNum" : 3,
+    "drinkNum" : 2,
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "二升",
         "yaoID" : 137,
-        "weight" : 0,
+        "weight" : 320,
         "showName" : "苇茎",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 51,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "薏苡仁",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "50枚",
         "yaoID" : 30,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "桃仁",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "半升",
         "yaoID" : 100,
-        "weight" : 0,
+        "weight" : 500,
         "showName" : "瓜瓣",
         "extraProcess" : "切"
       }
@@ -10604,9 +10610,9 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "一升",
         "yaoID" : 49,
-        "weight" : 0,
+        "weight" : 600,
         "showName" : "麦门冬",
         "extraProcess" : "切"
       }
