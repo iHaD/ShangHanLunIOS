@@ -12,6 +12,7 @@
 @property (assign,nonatomic,readonly) NSInteger yaoID;
 @property (strong,nonatomic,readonly) NSString *showName;
 @property (assign,nonatomic,readonly) float weight;
+@property (assign,nonatomic,readonly) float maxWeight;
 
 @property (strong,nonatomic,readonly) NSString *extraProcess;
 @property (strong,nonatomic,readonly) NSString *amount;

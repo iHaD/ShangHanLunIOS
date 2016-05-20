@@ -46,8 +46,8 @@
     }
     
     int res = NSOrderedSame;
-    float left = use.weight/_drinkNum;
-    float right = ano.weight/another.drinkNum;
+    float left = MAX(use.weight,use.maxWeight)/_drinkNum;
+    float right = MAX(ano.weight,ano.maxWeight)/another.drinkNum;
     if (left > right) {
         res = NSOrderedAscending;
     }else if (left < right){
