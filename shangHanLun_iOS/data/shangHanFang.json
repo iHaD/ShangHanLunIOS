@@ -751,7 +751,7 @@
   },
   {
     "yaoCount" : 4,
-    "drinkNum" : 3,
+    "drinkNum" : 1,
     "height" : 0,
     "standardYaoList" : [
       {
@@ -2094,9 +2094,10 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "三两(呕者加至半斤)",
         "yaoID" : 2,
         "weight" : 300,
+        "maxWeight":800,
         "showName" : "生姜",
         "extraProcess" : "切"
       },
@@ -2871,7 +2872,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "一钱匕",
+        "amount" : "50钱匕",
         "yaoID" : 65,
         "weight" : 500,
         "showName" : "甘遂末",
@@ -2920,7 +2921,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "一钱匕",
+        "amount" : "二钱匕",
         "yaoID" : 65,
         "weight" : 20,
         "showName" : "甘遂",
@@ -4205,9 +4206,9 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "3枚",
+        "amount" : "3枚大者",
         "yaoID" : 14,
-        "weight" : 30,
+        "weight" : 40,
         "showName" : "枳实",
         "extraProcess" : "切"
       }
@@ -5664,16 +5665,18 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "三两",
+        "amount" : "三两(腹中痛者加至四两半)",
         "yaoID" : 8,
         "weight" : 300,
+        "maxWeight":450,
         "showName" : "人参",
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "三两(寒者加至四两半)",
         "yaoID" : 6,
         "weight" : 300,
+        "maxWeight":450,
         "showName" : "干姜",
         "extraProcess" : "切"
       },
@@ -5685,9 +5688,10 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "三两(渴欲饮水加至四两半)",
         "yaoID" : 10,
         "weight" : 300,
+        "maxWeight":450,
         "showName" : "白术",
         "extraProcess" : "切"
       },
@@ -5702,13 +5706,6 @@
                    },
     ],
     "extraYaoList":[
-                    {
-                    "amount" : "一两半",
-                    "yaoID" : 10,
-                    "weight" : 150,
-                    "showName" : "术",
-                    "extraProcess" : "切"
-                    },
                     {
                     "amount" : "四两",
                     "yaoID" : 1,
