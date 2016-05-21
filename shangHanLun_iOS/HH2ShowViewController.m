@@ -213,14 +213,14 @@
                 
                 
                 BOOL isLink = NO;
-                NSDictionary *standardDict;
-                NSArray<NSString *> *nameList;
+                BOOL isFang = NO;
                 if ([sText containsString:@"y"]) {
                     isLink = YES;
                     sText = [sText stringByReplacingOccurrencesOfString:@"y" withString:@""];
                     found = [self findYao:sText inDataItem:obj];
                 }else if ([sText containsString:@"f"]) {
                     isLink = YES;
+                    isFang = YES;
                     sText = [sText stringByReplacingOccurrencesOfString:@"f" withString:@""];
                     found = [self findFang:sText inDataItem:obj];
                 }else{
@@ -278,25 +278,7 @@
                             }
                         }];
                         
-                        NSMutableArray *sNames = [NSMutableArray new];
-                        // 包含通配符时，先找出所有的可能的名字（药物列表缺“酒”，会导致不能给酒染色。）
-                        if ([sText containsString:@"."]) {
-                            [nameList enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                                NSRange range = [obj rangeOfString:sText options:NSRegularExpressionSearch];
-                                if (range.length == obj.length) {
-                                    NSString *standardName = standardDict[obj]?:obj;
-                                    NSArray<NSString *> *aliasArray = [standardDict allKeysForObject:standardName];
-                                    [sNames addObject:standardName];
-                                    [sNames addObjectsFromArray:aliasArray];
-                                }
-                            }];
-                        }else{
-                        // 不包含通配符，则将所有药物的别名和标准名纳入数组。
-                            NSString *standardName = standardDict[sText] ? : sText;
-                            NSArray<NSString *> *aliasArray = [standardDict allKeysForObject:standardName];
-                            [sNames addObject:standardName];
-                            [sNames addObjectsFromArray:aliasArray];
-                        }
+                        NSArray *sNames = [DataCache getAliasStringArrayByName:sText isFang:isFang];
                         
                         // 遍历所有链接以染色。
                         for (NSValue *value in arr) {

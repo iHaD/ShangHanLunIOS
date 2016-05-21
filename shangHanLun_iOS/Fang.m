@@ -26,6 +26,16 @@
             return [NSString stringWithFormat:@"$f{%@}$w{(%@%.0f%@服)}", _name, use.amount, floorf(_drinkNum), use.suffix?:@""];
         }
     }
+    for (YaoUse *use in _extraYaoList) {
+        if ([DataCache name:use.showName isEqualToName:yao isFang:NO]) {
+            return [NSString stringWithFormat:@"$f{%@}$w{(%@%.0f%@服)}", _name, use.amount, floorf(_drinkNum), use.suffix?:@""];
+        }
+    }
+    for (YaoUse *use in _helpYaoList) {
+        if ([DataCache name:use.showName isEqualToName:yao isFang:NO]) {
+            return [NSString stringWithFormat:@"$f{%@}$w{(%@%.0f%@服)}", _name, use.amount, floorf(_drinkNum), use.suffix?:@""];
+        }
+    }
     return @"";
 }
 
@@ -63,6 +73,17 @@
             return use;
         }
     }
+    for (YaoUse *use in _extraYaoList) {
+        if ([DataCache name:name isEqualToName:use.showName isFang:NO]) {
+            return use;
+        }
+    }
+    for (YaoUse *use in _helpYaoList) {
+        if ([DataCache name:name isEqualToName:use.showName isFang:NO]) {
+            return use;
+        }
+    }
+    
     return nil;
 }
 

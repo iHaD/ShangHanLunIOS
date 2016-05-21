@@ -24,6 +24,8 @@
 + (NSString *)getStandardYaoName:(NSString *)name;
 + (NSString *)getStandardFangName:(NSString *)name;
 
++ (NSArray<NSString *> *)getAliasStringArrayByName:(NSString *)name isFang:(BOOL)isFang;
+
 + (BOOL)hasYao:(NSString *)name;
 + (BOOL)hasFang:(NSString *)name;
 
@@ -33,5 +35,6 @@
 + (NSMutableAttributedString *)getYaoContentByName:(NSString *)yaoName;
 
 + (NSArray<HH2SectionData *> *)getFangListByYaoNameInStandardList:(NSString *)name;
++ (NSArray<HH2SectionData *> *)getFangListByYaoNameInAllYaoList:(NSString *)name;
 
 @end

@@ -221,6 +221,33 @@ NSDictionary *_fangAliasDict;
     return _fangAliasDict[name]?:name;
 }
 
++ (NSArray<NSString *> *)getAliasStringArrayByName:(NSString *)name isFang:(BOOL)isFang
+{
+    NSDictionary<NSString *, NSString *> *standardDict = isFang?_fangAliasDict:_yaoAliasDict;
+    NSMutableArray *sNames = [NSMutableArray new];
+    // 包含通配符时，先找出所有的可能的名字（药物列表缺“酒”，会导致不能给酒染色。）
+    NSString *sText = name;
+    if ([sText containsString:@"."]) {
+        [data.yao enumerateObjectsUsingBlock:^(Yao *obj_, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSString *obj = standardDict[obj_.name]?:obj_.name;
+            NSRange range = [obj rangeOfString:sText options:NSRegularExpressionSearch];
+            if (range.length == obj.length) {
+                NSString *standardName = obj;
+                NSArray<NSString *> *aliasArray = [standardDict allKeysForObject:standardName];
+                [sNames addObject:standardName];
+                [sNames addObjectsFromArray:aliasArray];
+            }
+        }];
+    }else{
+        // 不包含通配符，则将所有药物的别名和标准名纳入数组。
+        NSString *standardName = standardDict[sText] ? : sText;
+        NSArray<NSString *> *aliasArray = [standardDict allKeysForObject:standardName];
+        [sNames addObject:standardName];
+        [sNames addObjectsFromArray:aliasArray];
+    }
+    return sNames;
+}
+
 + (BOOL)hasYao:(NSString *)name
 {
     for (Yao *y in data.yao) {
@@ -298,6 +325,33 @@ NSDictionary *_fangAliasDict;
             BOOL has = NO;
             for (YaoUse *use in f.standardYaoList) {
                 if ([self name:name isEqualToName:use.showName isFang:NO]) {
+                    has = YES;
+                    break;
+                }
+            }
+            if (has) {
+                [f setValue:name forKey:@"curYao"];
+                [arrIn addObject:f];
+            }
+        }
+        HH2SectionData *d = [[HH2SectionData alloc] initWithData:arrIn section:sec.section];
+        if (sec.header) {
+            d.header = sec.header;
+        }
+        [arr addObject:d];
+    }
+    return arr;
+}
+
++ (NSArray<HH2SectionData *> *)getFangListByYaoNameInAllYaoList:(NSString *)name
+{
+    NSMutableArray *arr = [NSMutableArray new];
+    for (HH2SectionData *sec in data.fangData) {
+        NSMutableArray *arrIn = [NSMutableArray new];
+        for (Fang *f in sec.data) {
+            BOOL has = NO;
+            for (NSString *use in f.yaoList) {
+                if ([self name:name isEqualToName:use isFang:NO]) {
                     has = YES;
                     break;
                 }

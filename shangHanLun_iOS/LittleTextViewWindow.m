@@ -43,12 +43,16 @@
     NSString *right = [DataCache getStandardYaoName:yao];
     
     NSMutableString *strOut = [NSMutableString new];
-    NSArray<HH2SectionData *> *fangList = [DataCache getFangListByYaoNameInStandardList:yao];
+//    NSArray<HH2SectionData *> *fangList = [DataCache getFangListByYaoNameInStandardList:yao];
+    NSArray<HH2SectionData *> *fangList = [DataCache getFangListByYaoNameInAllYaoList:yao];
     for (HH2SectionData *sec in fangList) {
         NSArray<Fang *> *old = (NSArray<Fang *> *)sec.data;
         NSArray<Fang *> *fl_ = [old sortedArrayUsingSelector:@selector(compare:)];
         [strOut appendFormat:@"$m{%@}-$m{含“$v{%@}”凡%ld方：}\r%@",sec.header, right, fl_.count, [self getFangStringList:fl_]];
-        [strOut appendString:@"\r\r"];
+        if (fl_.count > 0) {
+            [strOut appendString:@"\r"];
+        }
+        [strOut appendString:@"\r"];
     }
     [strOut deleteCharactersInRange:NSMakeRange(strOut.length - 2, 2)];
     
