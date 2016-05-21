@@ -23,7 +23,7 @@
 {
     for (YaoUse *use in _standardYaoList) {
         if ([DataCache name:use.showName isEqualToName:yao isFang:NO]) {
-            return [NSString stringWithFormat:@"$f{%@}$w{(%@%ld服)}", _name, use.amount, _drinkNum];
+            return [NSString stringWithFormat:@"$f{%@}$w{(%@%.0f%@服)}", _name, use.amount, floorf(_drinkNum), use.suffix?:@""];
         }
     }
     return @"";

@@ -12,6 +12,7 @@
 @property (assign,nonatomic,readonly) NSInteger yaoID;
 @property (strong,nonatomic,readonly) NSString *showName;
 @property (assign,nonatomic,readonly) float weight;
+@property (strong,nonatomic,readonly) NSString *suffix;
 @property (assign,nonatomic,readonly) float maxWeight;
 
 @property (strong,nonatomic,readonly) NSString *extraProcess;
@@ -25,7 +26,7 @@
 
 @property (strong,nonatomic,readonly) NSString *name;
 @property (assign,nonatomic,readonly) NSInteger yaoCount;       // 几味
-@property (assign,nonatomic,readonly) NSInteger drinkNum;       // 几服
+@property (assign,nonatomic,readonly) float drinkNum;       // 几服
 @property (strong,nonatomic,readonly) NSString *makeWay;        // 方剂煎煮方法
 
 @property (strong,nonatomic) NSArray<YaoUse *> *standardYaoList; // 标准药物组合

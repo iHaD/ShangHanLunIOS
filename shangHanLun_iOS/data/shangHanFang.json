@@ -1740,7 +1740,7 @@
   },
   {
     "yaoCount" : 5,
-    "drinkNum" : 3,
+    "drinkNum" : 4,
     "height" : 0,
     "standardYaoList" : [
       {
@@ -1910,7 +1910,7 @@
       {
         "amount" : "四合",
         "yaoID" : 58,
-        "weight" : 40,
+        "weight" : 400,
         "showName" : "香豉",
         "extraProcess" : "切"
       }
@@ -1948,7 +1948,7 @@
       {
         "amount" : "四合",
         "yaoID" : 58,
-        "weight" : 40,
+        "weight" : 400,
         "showName" : "香豉",
         "extraProcess" : "切"
       }
@@ -1987,7 +1987,7 @@
       {
         "amount" : "四合",
         "yaoID" : 58,
-        "weight" : 40,
+        "weight" : 400,
         "showName" : "香豉",
         "extraProcess" : "切"
       }
@@ -2076,7 +2076,7 @@
   },
   {
     "yaoCount" : 8,
-    "drinkNum" : 3,
+    "drinkNum" : 4,
     "height" : 0,
     "standardYaoList" : [
       {
@@ -2810,7 +2810,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "二十五个",
+        "amount" : "25个",
         "yaoID" : 30,
         "weight" : 250,
         "showName" : "桃仁",
@@ -3307,9 +3307,9 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "10枚",
+        "amount" : "10枚肥大者",
         "yaoID" : 3,
-        "weight" : 100,
+        "weight" : 150,
         "showName" : "大枣",
         "extraProcess" : "切"
       }
@@ -3710,14 +3710,14 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "半钱匕",
+        "amount" : "一分(半钱匕)",
         "yaoID" : 98,
         "weight" : 5,
         "showName" : "瓜蒂",
         "extraProcess" : "切"
       },
       {
-        "amount" : "半钱匕",
+        "amount" : "一分(用半钱匕)",
         "yaoID" : 97,
         "weight" : 5,
         "showName" : "赤小豆",
@@ -4495,9 +4495,9 @@
     "height" : 0,
     "standardYaoList" : [
       {
-        "amount" : "15个",
+        "amount" : "15个肥",
         "yaoID" : 48,
-        "weight" : 150,
+        "weight" : 225,
         "showName" : "肥栀子",
         "extraProcess" : "切"
       },
