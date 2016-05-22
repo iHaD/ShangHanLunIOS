@@ -201,6 +201,8 @@
                           @"w" : config.yaoAmountColor,
                           @"q" : config.fangPrefixColor,
                           @"h" : [UIColor blackColor],
+                          @"x" : [UIColor brownColor], // 加减法
+                          @"y" : [UIColor orangeColor], // 辅助药物
                           };
     NSRange sRange;
 
