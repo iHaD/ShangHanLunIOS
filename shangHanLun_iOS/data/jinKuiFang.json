@@ -169,7 +169,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "洗",
+                   "amount" : "$y{洗大黄}",
                    "yaoID" : 24,
                    "weight" : 1,
                    "showName" : "酒",
@@ -342,28 +342,28 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "半两",
+                    "amount" : "$x{喘者加麻黄}半两",
                     "yaoID" : 11,
                     "weight" : 50,
                     "showName" : "麻黄",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "三分",
+                    "amount" : "$x{胃中不和者加芍药}三分",
                     "yaoID" : 5,
                     "weight" : 75,
                     "showName" : "芍药",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "三分",
+                    "amount" : "$x{气上冲者加桂枝}三分",
                     "yaoID" : 1,
                     "weight" : 75,
                     "showName" : "桂枝",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "三分",
+                    "amount" : "$x{下有陈寒者加细辛}三分",
                     "yaoID" : 15,
                     "weight" : 75,
                     "showName" : "细辛",
@@ -1222,14 +1222,14 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "一斗",
+                   "amount" : "$y{一斗}",
                    "yaoID" : 116,
                    "weight" : 10000,
                    "showName" : "煅灶下灰",
                    "extraProcess" : "切"
                    },
                    {
-                   "amount" : "一斛五斗",
+                   "amount" : "$y{一斛五斗}",
                    "yaoID" : 24,
                    "weight" : 150000,
                    "showName" : "清酒",
@@ -1659,7 +1659,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "酒服",
+                   "amount" : "$y{酒服}",
                    "yaoID" : 24,
                    "weight" : 10,
                    "showName" : "酒",
@@ -1844,7 +1844,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "一杯",
+                   "amount" : "$y{一杯}",
                    "yaoID" : 24,
                    "weight" : 20,
                    "showName" : "酒",
@@ -2027,7 +2027,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "二升",
+                   "amount" : "$y{二升}",
                    "yaoID" : 33,
                    "weight" : 2000,
                    "showName" : "蜜",
@@ -2202,42 +2202,42 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "二分",
+                    "amount" : "$x{心热加大黄}二分",
                     "yaoID" : 12,
                     "weight" : 50,
                     "showName" : "大黄",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "1枚",
+                    "amount" : "$x{腹满加枳实}1枚",
                     "yaoID" : 14,
                     "weight" : 10,
                     "showName" : "枳实",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "三分",
+                    "amount" : "$x{气逆加人参}三分",
                     "yaoID" : 8,
                     "weight" : 75,
                     "showName" : "人参",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "三分",
+                    "amount" : "$x{悸加牡蛎}三分",
                     "yaoID" : 23,
                     "weight" : 75,
                     "showName" : "牡蛎",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "三分",
+                    "amount" : "$x{渴加栝楼根}三分",
                     "yaoID" : 38,
                     "weight" : 75,
                     "showName" : "栝楼根",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "1枚",
+                    "amount" : "$x{先有寒加附子}1枚",
                     "yaoID" : 9,
                     "weight" : 100,
                     "showName" : "附子",
@@ -2381,14 +2381,14 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "三两",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 300,
                    "showName" : "蜜",
                    "extraProcess" : "切"
                    },
                    {
-                   "amount" : "酒服",
+                   "amount" : "$y{酒服}",
                    "yaoID" : 24,
                    "weight" : 20,
                    "showName" : "酒",
@@ -2464,7 +2464,7 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "1枚炮",
+                    "amount" : "$x{恶风加附子}1枚炮",
                     "yaoID" : 9,
                     "weight" : 100,
                     "showName" : "附子",
@@ -2649,7 +2649,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "酒服",
+                   "amount" : "$y{酒服}",
                    "yaoID" : 24,
                    "weight" : 10,
                    "showName" : "酒",
@@ -2753,7 +2753,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "12枚",
+        "amount" : "$x{腹满去大枣}12枚",
         "yaoID" : 3,
         "weight" : 120,
         "showName" : "大枣",
@@ -2767,7 +2767,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "二两(气短胸闷加之)",
+        "amount" : "二两($x{气短胸闷加量})",
         "yaoID" : 2,
         "weight" : 200,
         "maxWeight":300,
@@ -2791,14 +2791,14 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "一两",
+                    "amount" : "$x{腹满去枣加茯苓}一两",
                     "yaoID" : 7,
                     "weight" : 100,
                     "showName" : "茯苓",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "三两",
+                    "amount" : "$x{疗肺虚损不足,补气,加半夏}三两",
                     "yaoID" : 4,
                     "weight" : 300,
                     "showName" : "半夏",
@@ -2978,14 +2978,14 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 1000,
                    "showName" : "蜜",
                    "extraProcess" : "切"
                    },
                    {
-                   "amount" : "酒服",
+                   "amount" : "$y{酒服}",
                    "yaoID" : 24,
                    "weight" : 10,
                    "showName" : "酒",
@@ -3171,14 +3171,14 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 1000,
                    "showName" : "蜜",
                    "extraProcess" : "切"
                    },
                    {
-                   "amount" : "酒服",
+                   "amount" : "$y{酒服}",
                    "yaoID" : 24,
                    "weight" : 10,
                    "showName" : "酒",
@@ -3279,7 +3279,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "七升",
+                   "amount" : "$y{七升}",
                    "yaoID" : 24,
                    "weight" : 7000,
                    "showName" : "酒",
@@ -3461,14 +3461,14 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 200,
                    "showName" : "蜜",
                    "extraProcess" : "切"
                    },
                    {
-                   "amount" : "枣膏和汤",
+                   "amount" : "$y{枣膏和汤}",
                    "yaoID" : 3,
                    "weight" : 1000,
                    "showName" : "枣膏",
@@ -4325,7 +4325,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "一斗",
+                   "amount" : "$y{一斗}",
                    "yaoID" : -1,
                    "weight" : 10000,
                    "showName" : "甘澜水",
@@ -4725,7 +4725,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 100,
                    "showName" : "蜜",
@@ -4797,14 +4797,14 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 100,
                    "showName" : "蜜",
                    "extraProcess" : "切"
                    },
                    {
-                   "amount" : "酒服",
+                   "amount" : "$y{酒服}",
                    "yaoID" : 24,
                    "weight" : 10,
                    "showName" : "酒",
@@ -4848,7 +4848,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "三两",
+        "amount" : "$x{下利去大黄}三两",
         "yaoID" : 12,
         "weight" : 300,
         "showName" : "大黄",
@@ -4876,7 +4876,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "五两(寒多加至半斤)",
+        "amount" : "五两($x{寒多加}至半斤)",
         "yaoID" : 2,
         "weight" : 500,
         "maxWeight" : 800,
@@ -4886,7 +4886,7 @@
     ],
     "extraYaoList":[
                    {
-                   "amount" : "五合",
+                   "amount" : "$x{呕者加半夏}五合",
                    "yaoID" : 4,
                    "weight" : 500,
                    "showName" : "半夏",
@@ -5205,14 +5205,14 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "四两",
+                    "amount" : "$x{一方不用半夏用桂枝}四两",
                     "yaoID" : 1,
                     "weight" : 400,
                     "showName" : "桂枝",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "一两",
+                    "amount" : "$x{《千金》细辛作人参}一两",
                     "yaoID" : 8,
                     "weight" : 100,
                     "showName" : "人参",
@@ -5221,21 +5221,21 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "为色",
+                   "amount" : "$y{为色}",
                    "yaoID" : 139,
                    "weight" : 20,
                    "showName" : "真朱",
                    "extraProcess" : "切"
                    },
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 100,
                    "showName" : "蜜",
                    "extraProcess" : "切"
                    },
                    {
-                   "amount" : "酒服",
+                   "amount" : "$y{酒服}",
                    "yaoID" : 24,
                    "weight" : 10,
                    "showName" : "酒",
@@ -5275,7 +5275,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "二升",
+                   "amount" : "$y{二升}",
                    "yaoID" : 33,
                    "weight" : 2000,
                    "showName" : "蜜",
@@ -5306,7 +5306,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "五两(寒多加至一斤)",
+        "amount" : "五两($x{寒多加}至一斤)",
         "yaoID" : 2,
         "weight" : 500,
         "maxWeight":1600,
@@ -5323,14 +5323,14 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "二两",
+                    "amount" : "$x{痛多而呕者加白术一两,橘皮}二两",
                     "yaoID" : 45,
                     "weight" : 200,
                     "showName" : "橘皮",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "一两",
+                    "amount" : "$x{痛多而呕者加橘皮二两,白术}一两",
                     "yaoID" : 10,
                     "weight" : 100,
                     "showName" : "白术",
@@ -5400,7 +5400,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "二斤",
+                   "amount" : "$y{二斤}",
                    "yaoID" : 33,
                    "weight" : 3200,
                    "showName" : "蜜",
@@ -5686,7 +5686,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 100,
                    "showName" : "蜜",
@@ -5839,7 +5839,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "半升",
+                   "amount" : "$y{半升}",
                    "yaoID" : 33,
                    "weight" : 500,
                    "showName" : "蜜",
@@ -6296,7 +6296,7 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "半两",
+                    "amount" : "$x{渴者加芒硝}半两",
                     "yaoID" : 46,
                     "weight" : 50,
                     "showName" : "芒硝",
@@ -6305,7 +6305,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 100,
                    "showName" : "蜜",
@@ -6865,7 +6865,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 100,
                    "showName" : "蜜",
@@ -7094,14 +7094,14 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "1枚炮",
+                    "amount" : "$x{恶风者加附子}1枚炮",
                     "yaoID" : 9,
                     "weight" : 100,
                     "showName" : "附子",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "四两",
+                    "amount" : "$x{风水加术}四两",
                     "yaoID" : 10,
                     "weight" : 400,
                     "showName" : "术",
@@ -7536,7 +7536,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和服",
+                   "amount" : "$y{和服}",
                    "yaoID" : 70,
                    "weight" : 200,
                    "showName" : "大麦粥汁",
@@ -7868,7 +7868,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 10,
                    "showName" : "蜜",
@@ -8604,7 +8604,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "一升半",
+                   "amount" : "$y{一升半}",
                    "yaoID" : 6,
                    "weight" : 1500,
                    "showName" : "浆水",
@@ -9417,7 +9417,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 30,
                    "showName" : "蜜",
@@ -9553,14 +9553,14 @@
     ],
     "helpYaoList":[
                 {
-                "amount" : "渍乌梅",
+                "amount" : "$y{渍乌梅}",
                 "yaoID" : 110,
                 "weight" : 1000,
                 "showName" : "苦酒",
                 "extraProcess" : "切"
                 },
                 {
-                "amount" : "合丸",
+                "amount" : "$y{合丸}",
                 "yaoID" : 33,
                 "weight" : 200,
                 "showName" : "蜜",
@@ -9631,7 +9631,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 10,
                    "showName" : "蜜",
@@ -9710,16 +9710,16 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "二两",
+                    "amount" : "$x{一方加干姜}一两",
                     "yaoID" : 6,
-                    "weight" : 200,
+                    "weight" : 100,
                     "showName" : "干姜",
                     "extraProcess" : "切"
                     },
     ],
     "helpYaoList":[
                    {
-                   "amount" : "三升",
+                   "amount" : "$y{三升合煮}",
                    "yaoID" : 24,
                    "weight" : 3000,
                    "showName" : "清酒",
@@ -9794,7 +9794,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "酒和",
+                   "amount" : "$y{酒和}",
                    "yaoID" : 24,
                    "weight" : 10,
                    "showName" : "酒",
@@ -9846,7 +9846,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "糊丸",
+                   "amount" : "$y{糊丸}",
                    "yaoID" : 4,
                    "weight" : 20,
                    "showName" : "生姜汁",
@@ -9895,7 +9895,7 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "半两",
+                    "amount" : "$x{男子加滑石}半两",
                     "yaoID" : 35,
                     "weight" : 50,
                     "showName" : "滑石",
@@ -9903,7 +9903,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 100,
                    "showName" : "蜜",
@@ -9998,7 +9998,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "酒服",
+                   "amount" : "$y{酒服}",
                    "yaoID" : 24,
                    "weight" : 100,
                    "showName" : "酒",
@@ -10033,7 +10033,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "四分(心下毒痛倍加)",
+        "amount" : "四分($x{心下毒痛倍加})",
         "yaoID" : 20,
         "weight" : 100,
         "maxWeight":200,
@@ -10057,7 +10057,7 @@
     ],
     "helpYaoList":[
                 {
-                "amount" : "酒服",
+                "amount" : "$y{酒服}",
                 "yaoID" : 24,
                 "weight" : 100,
                 "showName" : "酒",
@@ -10066,42 +10066,42 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "量缺",
+                    "amount" : "$x{但苦痛加芍药}量缺",
                     "yaoID" : 5,
                     "weight" : 50,
                     "showName" : "芍药",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "一两",
+                    "amount" : "$x{心烦吐痛,不能食饮,加半夏20枚,细辛}一两",
                     "yaoID" : 15,
                     "weight" : 100,
                     "showName" : "细辛",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "20枚大者",
+                    "amount" : "$x{心烦吐痛,不能食饮,加细辛一两,半夏}20枚大者",
                     "yaoID" : 4,
                     "weight" : 150,
                     "showName" : "半夏",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "和服",
+                    "amount" : "$x{心烦吐痛，不能食饮，加细辛半夏服后更服之}",
                     "yaoID" : -1,
                     "weight" : 1500,
                     "showName" : "醋浆水",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "和服",
+                    "amount" : "$x{心烦吐痛，不能食饮，加细辛半夏服后更服之醋浆水,不解者}服之",
                     "yaoID" : 69,
                     "weight" : 1500,
                     "showName" : "小麦汁",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "服之",
+                    "amount" : "$x{心烦吐痛，不能食饮，加细辛半夏服后更服之醋浆水,不解者服小麦汁服之,已后渴者}服之",
                     "yaoID" : 70,
                     "weight" : 1500,
                     "showName" : "大麦粥",
@@ -10150,7 +10150,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和服",
+                   "amount" : "$y{和服}",
                    "yaoID" : 69,
                    "weight" : 100,
                    "showName" : "麦粥",
@@ -10198,14 +10198,14 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 80,
                    "showName" : "蜜",
                    "extraProcess" : "切"
                    },
                    {
-                   "amount" : "一升",
+                   "amount" : "$y{一升}",
                    "yaoID" : 24,
                    "weight" : 1000,
                    "showName" : "酒",
@@ -10281,7 +10281,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "1枚炮(颈项强用大者)",
+        "amount" : "1枚炮($x{颈项强用大者})",
         "yaoID" : 9,
         "weight" : 100,
         "maxWeight":150,
@@ -10305,7 +10305,7 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "半升",
+                    "amount" : "$x{呕者加半夏}半升",
                     "yaoID" : 4,
                     "weight" : 500,
                     "showName" : "半夏",
@@ -10366,7 +10366,7 @@
         "extraProcess" : "切"
       },
       {
-        "amount" : "一分(有热者倍之)",
+        "amount" : "一分($x{有热者倍之})",
         "yaoID" : 166,
         "weight" : 25,
         "maxWeight":50,
@@ -10376,7 +10376,7 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "一分",
+                    "amount" : "$x{烦喘者加柏实}一分",
                     "yaoID" : 167,
                     "weight" : 25,
                     "showName" : "柏实",
@@ -10385,7 +10385,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 3,
                    "weight" : 50,
                    "showName" : "枣肉",
@@ -10561,35 +10561,35 @@
     ],
     "extraYaoList":[
                     {
-                    "amount" : "六两",
+                    "amount" : "$x{若大虚加饴糖}六两",
                     "yaoID" : 56,
                     "weight" : 500,
                     "showName" : "饴糖",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "六两",
+                    "amount" : "$x{若去血过多,崩伤内衄不止,加阿胶二两,地黄}六两",
                     "yaoID" : 26,
                     "weight" : 600,
                     "showName" : "地黄",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "二两",
+                    "amount" : "$x{若去血过多,崩伤内衄不止,加地黄六两,阿胶}二两",
                     "yaoID" : 21,
                     "weight" : 200,
                     "showName" : "阿胶",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "代之",
+                    "amount" : "$x{若无当归,以芎䓖}代之",
                     "yaoID" : 20,
                     "weight" : 400,
                     "showName" : "芎䓖",
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "代之",
+                    "amount" : "$x{若无生姜,以干姜}代之",
                     "yaoID" : 6,
                     "weight" : 300,
                     "showName" : "干姜",
@@ -10857,7 +10857,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "酒服",
+                   "amount" : "$y{酒服}",
                    "yaoID" : 24,
                    "weight" : 120,
                    "showName" : "酒",
@@ -10992,7 +10992,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "酒浸",
+                   "amount" : "$y{酒浸}",
                    "yaoID" : 24,
                    "weight" : 60,
                    "showName" : "酒",
@@ -11035,7 +11035,7 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 20,
                    "showName" : "蜜",
@@ -11149,14 +11149,14 @@
     ],
     "helpYaoList":[
                    {
-                   "amount" : "和丸",
+                   "amount" : "$y{和丸}",
                    "yaoID" : 33,
                    "weight" : 400,
                    "showName" : "蜜",
                    "extraProcess" : "切"
                    },
                    {
-                   "amount" : "酒服",
+                   "amount" : "$y{酒服}",
                    "yaoID" : 24,
                    "weight" : 300,
                    "showName" : "酒",
