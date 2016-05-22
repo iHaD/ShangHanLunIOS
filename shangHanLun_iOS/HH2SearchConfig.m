@@ -22,7 +22,7 @@ static HH2SearchConfig *config;
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     _font = [def objectForKey:@"font"] ? [UIFont systemFontOfSize:[[def objectForKey:@"font"] floatValue]] : [UIFont systemFontOfSize:17.0];
     _smallFont = [def objectForKey:@"smallFont"] ? : [_font fontWithSize:_font.pointSize - 4];
-    _isContentOpenAtFirst = [([def objectForKey:@"isContentOpenAtFirst"] ? : @YES) boolValue];
+    _isContentOpenAtFirst = [([def objectForKey:@"isContentOpenAtFirst"] ? : @NO) boolValue];
     _showShangHan = [[def objectForKey:@"showShangHan"] ? : @(ShowShangHanOnly398) integerValue];
     _showJinKui = [[def objectForKey:@"showJinKui"] ? : @(ShowJinKuiDefault) integerValue];
     

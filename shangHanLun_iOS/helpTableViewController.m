@@ -41,6 +41,7 @@
     UISlider *_slider;
     UILabel *_example;
     UIFont *_font;
+    UIActivityIndicatorView *av;
 }
 @end
 
@@ -52,9 +53,13 @@
 //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(copyOut:)];
     
     _dataToShow = @[@[@""],
-                    @[@"只显示398条",
+                    @[@"不显示伤寒论",
+                      @"只显示398条",
                       @"显示完整宋板伤寒论",
-                      @"显示398条与金匮要略合集"],
+                      ],
+                    @[@"不显示金匮要略",
+                      @"显示默认版金匮要略"
+                        ],
                     @[@"使用邮件导出原有笔记"],
                     @[@"使用帮助"],
                     @[@"欢迎进QQ群",
@@ -66,6 +71,7 @@
     _header = @[
                 @"拖动滑块调整查阅界面字体大小",
                 @"关于伤寒论内容",
+                @"关于金匮要略内容",
                 @"关于原有笔记内容",
                 @"关于搜索:",
                 @"欢迎联系",
@@ -123,12 +129,22 @@
         }
     }
     
-    if (indexPath.section == 3 || indexPath.section == 2) {
+    if (indexPath.section == 2) {
+        cell.selectionStyle = UITableViewCellSelectionStyleDefault;
+        HH2SearchConfig *config = [HH2SearchConfig sharedConfig];
+        if (indexPath.row == config.showJinKui) {
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        }else{
+            cell.accessoryType = UITableViewCellAccessoryNone;
+        }
+    }
+    
+    if (indexPath.section == 4 || indexPath.section == 3) {
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     }
     
-    if (indexPath.section == 4) {
+    if (indexPath.section == 5) {
         cell.detailTextLabel.text = @[@"464024993", @"http://www.huanghai.me", @"评论", @"23891995@qq.com"][indexPath.row];
         cell.selectionStyle = UITableViewCellSelectionStyleDefault;
         if (indexPath.row == _mailRow) {
@@ -194,7 +210,6 @@
     font = [UIFont fontWithName:font.fontName size:size];
     [HH2SearchConfig sharedConfig].font = font;
     
-    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
     DataCache *cache = [DataCache sharedData];
     for (NSArray<HH2SectionData *> *obj in @[cache.itemData, cache.fangData, cache.yaoData]) {
         [obj enumerateObjectsUsingBlock:^(HH2SectionData *obj, NSUInteger idx, BOOL *stop){
@@ -218,8 +233,18 @@
 
 - (void)toggleContent
 {
-    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//    [app refreshShowType];
+    if (!av) {
+        av = [UIActivityIndicatorView new];
+        av.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+        av.center = CGPointMake(self.view.width/2, self.view.window.height/2 - 20);
+        [self.view addSubview:av];
+    }
+    [av startAnimating];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[DataCache sharedData] refreshShowType];
+        [av stopAnimating];
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, 2)] withRowAnimation:UITableViewRowAnimationAutomatic];
+    });
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -229,7 +254,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 4) {
+    if (indexPath.section == 5) {
         if (indexPath.row == _mailRow) {
 //            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto://23891995@qq.com"]];
             if ([MFMailComposeViewController canSendMail]) {
@@ -249,10 +274,10 @@
                 [[UIApplication sharedApplication] openURL:url];
             }
         }
-    }else if (indexPath.section == 3){
+    }else if (indexPath.section == 4){
         HelpContentViewController *con = [HelpContentViewController new];
         [self.navigationController pushViewController:con animated:YES];
-    }else if (indexPath.section == 2){
+    }else if (indexPath.section == 3){
         NSString *str = @"";//[[contentData sharedData] getNotesString];
         if ([MFMailComposeViewController canSendMail]) {
             MFMailComposeViewController *con = [[MFMailComposeViewController alloc] init];
@@ -266,11 +291,14 @@
             SHOW_ALERT(@"您的设备不支持发送邮件，抱歉。已将笔记内容复制到剪贴板，请到备忘录或者其他app中自行粘贴查看。");
             [UIPasteboard generalPasteboard].string = str;
         }
-    }else if (indexPath.section == 1){
+    }else if (indexPath.section == 1 || indexPath.section == 2){
         HH2SearchConfig *config = [HH2SearchConfig sharedConfig];
-//        config.showContent = indexPath.row;
+        if (indexPath.section == 1) {
+            config.showShangHan = indexPath.row;
+        }else{
+            config.showJinKui = indexPath.row;
+        }
         [self toggleContent];
-        [tableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationAutomatic];
         return;
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -283,7 +311,7 @@
 
 - (BOOL)tableView:(UITableView *)tableView shouldShowMenuForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 4 && indexPath.row < 2) {
+    if (indexPath.section == 5 && indexPath.row < 2) {
         return YES;
     }
     return NO;

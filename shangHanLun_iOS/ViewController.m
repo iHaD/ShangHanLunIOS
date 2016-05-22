@@ -71,10 +71,14 @@
                 if (obj2.ID == num) {
                     *stop = YES;
                     *stop2 = YES;
-                    ip = obj2.indexPath;
+                    ip = [NSIndexPath indexPathForRow:idx2 inSection:idx];
                 }
             }];
         }];
+        if (!ip) {
+            return;
+        }
+        NSLog(@"%@",ip);
         if (![self isContentShow]) {
             [self showContent];
         }

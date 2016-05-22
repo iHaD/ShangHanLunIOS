@@ -481,8 +481,8 @@
 				E7F6FD831CD9E01B00DE48DF /* YYText */,
 				E7F6FD631CD9DECB00DE48DF /* NSString+getAllSubString.h */,
 				E7F6FD4C1CD9DECB00DE48DF /* NSString+getAllSubString.m */,
-				E7F6FD661CD9DECB00DE48DF /* UIView+HH2Rect.m */,
 				E7F6FD671CD9DECB00DE48DF /* UIView+HH2Rect.h */,
+				E7F6FD661CD9DECB00DE48DF /* UIView+HH2Rect.m */,
 			);
 			name = libs;
 			sourceTree = "<group>";

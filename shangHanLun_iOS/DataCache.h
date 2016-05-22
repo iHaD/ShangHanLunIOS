@@ -21,6 +21,8 @@
 
 + (instancetype)sharedData;
 
+- (void)refreshShowType;
+
 + (NSString *)getStandardYaoName:(NSString *)name;
 + (NSString *)getStandardFangName:(NSString *)name;
 

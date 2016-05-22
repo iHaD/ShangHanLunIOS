@@ -8,6 +8,10 @@
 
 #import "DataCache.h"
 #import "HH2SearchConfig.h"
+#import "AppDelegate.h"
+#import "ViewController.h"
+#import "FangViewController.h"
+#import "YaoViewController.h"
 
 @implementation DataCache
 static DataCache *data;
@@ -21,9 +25,14 @@ NSDictionary *_fangAliasDict;
     config = [HH2SearchConfig sharedConfig];
     [self initAlias];
     [self initYaoData];
+    [self initOtherData];
+    return self;
+}
+
+- (void)initOtherData
+{
     [self initFangData];
     [self initContentData];
-    return self;
 }
 
 + (instancetype)sharedData
@@ -76,6 +85,8 @@ NSDictionary *_fangAliasDict;
         section++;
         _shangHanFang = (NSArray<Fang *> *)target.firstObject.data;
         _fangData = target;
+    }else{
+        _fangData = nil;
     }
     
     if (config.showJinKui != ShowJinKuiNone) {
@@ -209,6 +220,28 @@ NSDictionary *_fangAliasDict;
                        @"膏发煎":@"猪膏发煎",
                        @"小柴胡":@"小柴胡汤"
                        };
+}
+
+- (void)refreshShowType
+{
+    AppDelegate *app = APP;
+    UIWindow *window = app.window;
+    UITabBarController *tab = (UITabBarController *)window.rootViewController;
+    [self initOtherData];
+    for (UINavigationController *nav in tab.viewControllers) {
+        UIViewController *vc_ = nav.viewControllers.firstObject;
+        if ([vc_ isKindOfClass:[ViewController class]]) {
+            [nav popToRootViewControllerAnimated:NO];
+            ViewController *vc = (ViewController *)vc_;
+            [vc resetDataSource:self.itemData];
+        }else if ([vc_ isKindOfClass:[FangViewController class]]){
+            [nav popToRootViewControllerAnimated:NO];
+            FangViewController *vc = (FangViewController *)vc_;
+            [vc resetDataSource:self.fangData];
+        }else if ([vc_ isKindOfClass:[YaoViewController class]]){
+            [nav popToRootViewControllerAnimated:NO];
+        }
+    }
 }
 
 + (NSString *)getStandardYaoName:(NSString *)name
