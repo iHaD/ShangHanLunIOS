@@ -24,6 +24,7 @@ typedef NS_ENUM(NSInteger, DataType){
 }
 
 @property (assign,nonatomic,readonly) NSUInteger section;
+@property (assign,nonatomic,readonly) NSUInteger sectionIdx;
 @property (strong,nonatomic) NSString *header;
 @property (strong,nonatomic) NSArray<DataItem *> *data;
 

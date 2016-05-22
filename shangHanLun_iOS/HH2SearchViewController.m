@@ -148,10 +148,7 @@
         CGFloat top = rect.origin.y - tableView.contentOffset.y;
         CGFloat height = HEADER_HEIGHT;
         NSIndexPath *ip = data[indexPath.section].data[indexPath.row].indexPath;
-        NSInteger section = config.showShangHan != ShowShangHanAllSongBanShangHan ? ip.section - 8 : ip.section;
-//        if (config.showContent == Show398AndJinKui && section >= 19) {
-//            section -= 9;
-//        }
+        NSInteger section = ip.section;
         NSInteger row = ip.row;
         
         lastSearchWords = self.searchBar.text ? : self.searchText;

@@ -5122,7 +5122,7 @@
                     "extraProcess" : "切"
                     },
                     {
-                    "amount" : "$x{呕者加}二两",
+                    "amount" : "$x{呕者加生姜}二两",
                     "yaoID" : 2,
                     "weight" : 200,
                     "showName" : "生姜",

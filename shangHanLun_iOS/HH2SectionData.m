@@ -37,6 +37,8 @@
             NSIndexPath *ip = [NSIndexPath indexPathForRow:idx inSection:_section];
             [obj setValue:ip forKey:@"indexPath"];
         }];
+    }else if([key isEqualToString:@"section"]){
+        [super setValue:value forKey:@"sectionIdx"];
     }else{
         [super setValue:value forKey:key];
     }
@@ -58,8 +60,8 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dict section:(NSUInteger)section type:(DataType)type_
 {
     self = [super init];
-    _section = section;
     type = type_;
+    _section = section;
     [self setValuesForKeysWithDictionary:dict];
     
     return self;
