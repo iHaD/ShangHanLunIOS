@@ -44,6 +44,9 @@
 {
 //    NSLog(@"key:%@",key);
     if ([value isKindOfClass:[NSArray class]]) {
+        objc_property_t pt = class_getProperty(self.class, [key cStringUsingEncoding:NSUTF8StringEncoding]);
+        NSString *clsString = [NSString stringWithCString:property_getAttributes(pt) encoding:NSUTF8StringEncoding];
+        NSLog(@"clsString:%@",clsString);
         Class dataClass = [self getSubDataClassInArrayForKey:key];
         NSMutableArray *arr = [NSMutableArray new];
         for (NSDictionary *json in value) {

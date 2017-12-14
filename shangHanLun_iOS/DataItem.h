@@ -8,6 +8,7 @@
 
 #import "JSONModel.h"
 #import "UIKit/UIKit.h"
+@protocol NSString;
 
 // 此类只需要设置self.text和self.indexPath，其他属性可由text自动生成。
 @interface DataItem : JSONModel

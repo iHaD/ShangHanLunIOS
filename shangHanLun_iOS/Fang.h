@@ -8,6 +8,8 @@
 
 #import "DataItem.h"
 
+@protocol YaoUse;
+
 @interface YaoUse : JSONModel
 @property (assign,nonatomic,readonly) NSInteger yaoID;
 @property (strong,nonatomic,readonly) NSString *showName;

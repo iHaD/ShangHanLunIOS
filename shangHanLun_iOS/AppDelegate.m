@@ -86,12 +86,12 @@
         nav.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
         nav.navigationBar.tintColor = [UIColor whiteColor];
     }];
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = _tc;
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.6 green:0.7 blue:1.0 alpha:1]];
     //    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:0.7]];
-    
+
     [self.window makeKeyAndVisible];
     
     return YES;
